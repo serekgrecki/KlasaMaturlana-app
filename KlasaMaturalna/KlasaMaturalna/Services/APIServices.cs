@@ -12,7 +12,7 @@ namespace KlasaMaturalna.Services
 {
     public static class APIServices
     {
-        public static string addQustionPOST(TodayQuestion questionToAdd)
+        public static async Task<string> addQustionPOST(TodayQuestion questionToAdd)
         {
             string todayDate = DateTime.Today.ToString("yyyy-MM-dd");
             var content = new FormUrlEncodedContent(new[]
@@ -28,7 +28,7 @@ namespace KlasaMaturalna.Services
             {
                 try
                 {
-                    var result = httpClient.PostAsync(url, content).Result;
+                    var result = await httpClient.PostAsync(url, content);
                     if (result.IsSuccessStatusCode)
                     {
                         var responseContent = result.Content;
@@ -36,20 +36,20 @@ namespace KlasaMaturalna.Services
                         return works;
                     }//end if
                     string errorMessage = result.StatusCode.ToString();
-                    App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
+                    await App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
                     return errorMessage;
                 }//end try
                 catch (AggregateException ex)
                 {
                     string ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
                                             " time out, try again letter" : "Turn on your internet conection then try again";
-                    App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
+                    await App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
                     return ErrorMessage;
                 }//catch AggregateEx
             }//end using
         }//end method
 
-        public static List<TodayQuestion> quesitonTodayGET()
+        public static async Task<List<TodayQuestion>> quesitonTodayGET()
         {
 
             string todayDate = DateTime.Today.ToString("yyyy-MM-dd");
@@ -61,7 +61,7 @@ namespace KlasaMaturalna.Services
             {
                 try
                 {
-                    var result = httpClient.GetAsync(url).Result;
+                    var result = await httpClient.GetAsync(url);
                     if (result.IsSuccessStatusCode)
                     {
                         var responseContent = result.Content;
@@ -86,21 +86,21 @@ namespace KlasaMaturalna.Services
                         return list;
                     }//end if
                     string errorMessage = result.StatusCode.ToString();
-                    App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
+                    await App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
                     return list;
                 }//end try
                 catch (AggregateException ex)
                 {
                     string ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
                                             " time out, try again letter" : "Turn on your internet conection then try again";
-                    App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
+                    await App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
                     return list;
                 }//catch AggregateEx
             }//end using
         }//end method
 
 
-        public static Question qeustionRandomGET(int id)
+        public static async Task<Question> qeustionRandomGET(int id)
         {
             Question question = new Question();
 
@@ -110,7 +110,7 @@ namespace KlasaMaturalna.Services
             {
                 try
                 {
-                    var result = httpClient.GetAsync(url).Result;
+                    var result = await httpClient.GetAsync(url);
                     if (result.IsSuccessStatusCode)
                     {
                         var responseContent = result.Content;
@@ -126,21 +126,21 @@ namespace KlasaMaturalna.Services
                         return question;
                     }//end if
                     string errorMessage = result.StatusCode.ToString();
-                    App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
+                    await App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
                     return question;
                 }//end try
                 catch (AggregateException ex)
                 {
                     string ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
                                             " time out, try again letter" : "Turn on your internet conection then try again";
-                    App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
+                    await App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
                     return question;
                 }//catch AggregateEx
             }//end using
         }//end method
 
 
-        public static int countRandomQuesitonsGET()
+        public static async Task<int> countRandomQuesitonsGET()
         {
             string url = $"http://klasamaturalna.pl/ajax.php?get=countRandomQuesitonsGET";
 
@@ -148,7 +148,7 @@ namespace KlasaMaturalna.Services
             {
                 try
                 {
-                    var result = httpClient.GetAsync(url).Result;
+                    var result = await httpClient.GetAsync(url);
                     if (result.IsSuccessStatusCode)
                     {
                         var responseContent = result.Content;
@@ -163,14 +163,14 @@ namespace KlasaMaturalna.Services
                         return int.Parse(toReturn);
                     }//end if
                     string errorMessage = result.StatusCode.ToString();
-                    App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
+                    await App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
                     return -1;
                 }//end try
                 catch (AggregateException ex)
                 {
                     string ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
                                             " time out, try again letter" : "Turn on your internet conection then try again";
-                     App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
+                    await App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
                     return -1;
                 }//catch AggregateEx
             }//end using
