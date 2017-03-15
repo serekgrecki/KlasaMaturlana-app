@@ -1,0 +1,173 @@
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\KlasaMaturalna.Android.csprojResolveAssemblyReference.cache
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android.pdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android.apk
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android-Signed.apk
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\FormsViewGroup.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.Design.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.v4.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Core.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Platform.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Xaml.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.pdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\FormsViewGroup.pdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\FormsViewGroup.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Core.pdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Core.xml
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Core.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Platform.Android.pdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Xaml.xml
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\KlasaMaturalna.Android.dll
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\KlasaMaturalna.Android.pdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\bin\KlasaMaturalna.Android.apk
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\drawable\icon.png
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\drawable-hdpi\icon.png
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\drawable-xhdpi\icon.png
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\drawable-xxhdpi\icon.png
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\layout\tabbar.xml
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\layout\toolbar.xml
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\values\styles.xml
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\R.cs.flag
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\uploadflags.txt
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Java.Interop.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Mono.Android.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\mscorlib.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.ComponentModel.Composition.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.Core.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.Net.Http.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.Runtime.Serialization.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.ServiceModel.Internals.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.Xml.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.Xml.Linq.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Java.Interop.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\KlasaMaturalna.Android.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\KlasaMaturalna.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Mono.Android.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\mscorlib.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.Core.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.Net.Http.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.Xml.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+c:\users\szymon\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\SZYMON\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\drawable\logo.png
+C:\Users\SZYMON\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android.dll.config
+C:\Users\SZYMON\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Microsoft.CSharp.dll.mdb
+C:\Users\SZYMON\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Mono.CSharp.dll.mdb
+C:\Users\SZYMON\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.Runtime.Serialization.Primitives.dll.mdb
+C:\Users\SZYMON\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+C:\Users\SZYMON\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Mono.CSharp.dll.mdb
+C:\Users\SZYMON\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.Runtime.Serialization.Primitives.dll.mdb
+C:\Users\SZYMON\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\drawable\button_bg.xml
+C:\Users\SZYMON\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\FFImageLoading.dll.mdb
+C:\Users\SZYMON\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\FFImageLoading.Forms.dll.mdb
+C:\Users\SZYMON\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\FFImageLoading.dll.mdb
+C:\Users\SZYMON\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\FFImageLoading.Forms.dll.mdb
+C:\Users\SZYMON\documents\visual studio 2015\Projects\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\KlasaMaturalna.Android.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android.dll.config
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android.pdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android.apk
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android-Signed.apk
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\FormsViewGroup.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.Design.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.pdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\FormsViewGroup.pdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\FormsViewGroup.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Core.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Platform.Android.pdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\KlasaMaturalna.Android.csprojResolveAssemblyReference.cache
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\KlasaMaturalna.Android.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\KlasaMaturalna.Android.pdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\bin\KlasaMaturalna.Android.apk
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\drawable\icon.png
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\drawable-hdpi\icon.png
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\drawable-xhdpi\icon.png
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\drawable-xxhdpi\icon.png
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\layout\tabbar.xml
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\layout\toolbar.xml
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\values\styles.xml
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\drawable\logo.png
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\drawable\button_bg.xml
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\R.cs.flag
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\uploadflags.txt
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\FFImageLoading.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\FFImageLoading.Forms.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Java.Interop.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Microsoft.CSharp.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Mono.Android.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Mono.CSharp.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\mscorlib.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.ComponentModel.Composition.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.Core.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.Net.Http.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.Runtime.Serialization.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.Runtime.Serialization.Primitives.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.ServiceModel.Internals.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.Xml.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\System.Xml.Linq.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\FFImageLoading.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\FFImageLoading.Forms.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Java.Interop.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\KlasaMaturalna.Android.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\KlasaMaturalna.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Mono.Android.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Mono.CSharp.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\mscorlib.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.Core.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.Net.Http.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.Runtime.Serialization.Primitives.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.Xml.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\KlasaMaturalna.Android.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android.dll.mdb

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KlasaMaturalna.Views.DefaultPage"
+             xmlns:ViewModels="clr-namespace:KlasaMaturalna.ViewModels;assembly=KlasaMaturalna"
+             Title="Klasa Maturalna">
+    <ContentPage.BindingContext>
+        <ViewModels:DefaultViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout Padding="20">
+        <Label HorizontalTextAlignment="Center" Text="Witaj w aplikacji Klasa Maturalna - aplikacji niezbędnej dla każdego maturzysty!"/>
+        <Label HorizontalTextAlignment="Center" Text="Zapraszamy na naszą stronę internetową zawierającą mnóstwo przydatnych materiałów."/>
+        <Label Text=""/>
+        <Label FontSize="20" FontAttributes="Bold" Text="TERMINARZ : " HorizontalOptions="Start"/>
+        <ListView HasUnevenRows="True" ItemsSource="{Binding Timetable}" ItemSelected="ListView_OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding}"></Label>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

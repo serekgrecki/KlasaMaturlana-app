@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KlasaMaturalna.Views.RandomQuestionPage"
+             xmlns:Control="clr-namespace:KlasaMaturalna.Controls;assembly=KlasaMaturalna"
+             xmlns:ViewModel="clr-namespace:KlasaMaturalna.ViewModels;assembly=KlasaMaturalna"
+             Title="Losuj pytanie">
+    <ContentPage.BindingContext>
+        <ViewModel:RandomQuestionViewModel/>
+    </ContentPage.BindingContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Control:CircleButton Text="LOSUJ PYTANIE" Grid.Row="1" Grid.Column="1" Command="{Binding RandomQustionCommand}"/>
+    </Grid>
+</ContentPage>

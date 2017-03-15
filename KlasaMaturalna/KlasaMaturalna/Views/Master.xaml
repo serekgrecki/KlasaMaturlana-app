@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KlasaMaturalna.Master"
+             Title="Master" Icon="menu.png">
+    <StackLayout Padding="20,20,20,20">
+        <Image Source="logo.png" Aspect="AspectFit">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped" NumberOfTapsRequired="1"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <Button Text="Losuj pytanie" FontAttributes="Bold" x:Name="btnRandomQuestionPage" HorizontalOptions="Start"
+                BackgroundColor="Transparent" BorderColor="Transparent"/>
+        <Button Text="Kalkulator" FontAttributes="Bold" x:Name="btnCalculatorPage" HorizontalOptions="Start" 
+                BackgroundColor="Transparent" BorderColor="Transparent"/>
+        <Button Text="Dzisiejsze pytania" FontAttributes="Bold" x:Name="btnTodayQuestionsPage" HorizontalOptions="Start" 
+                BackgroundColor="Transparent" BorderColor="Transparent"/>
+        <Button Text="Dodaj pytanie" FontAttributes="Bold" x:Name="btnAddQuestionsPage" HorizontalOptions="Start" 
+                BackgroundColor="Transparent" BorderColor="Transparent"/>
+        <Label Text="www.klasamaturalna.pl">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped" NumberOfTapsRequired="1"/>
+            </Label.GestureRecognizers>
+        </Label>
+    </StackLayout>
+</ContentPage>

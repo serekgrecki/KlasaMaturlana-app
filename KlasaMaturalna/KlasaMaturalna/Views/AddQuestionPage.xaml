@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KlasaMaturalna.Views.AddQuestionPage"
+             xmlns:controls="clr-namespace:KlasaMaturalna.Controls"
+             xmlns:ViewModel="clr-namespace:KlasaMaturalna.ViewModels;assembly=KlasaMaturalna"
+             Title="Dodaj pytanie">
+    <ContentPage.BindingContext>
+        <ViewModel:AddQuestionViewModel/>
+    </ContentPage.BindingContext>
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" HorizontalOptions="CenterAndExpand" Text="Jesteś już po egzaminie ustnym z języka polskiego? Podziel się pytaniem, które miałeś i pomoż pozostałym maturzystom!"/>
+        <Label Grid.Row="1" Text="Numer pytania:" HorizontalOptions="Start"/>
+        <controls:MyPicker Grid.Row="2" ItemsSource="{Binding NumberQuestionsList}" SelectedIndex="{Binding IndexNumberQuestion}"/>
+        <Label Grid.Row="3" Text="Treść:" HorizontalOptions="Start"/>
+        <Editor Grid.Row="4" Text="{Binding QuestionContent}"/>
+        <Button Grid.Row="5" Text="Wyślij!" FontSize="25" BackgroundColor="#5cb85c" Command="{Binding SendQuestionCommand}"/>
+    </Grid>
+    
+</ContentPage>
