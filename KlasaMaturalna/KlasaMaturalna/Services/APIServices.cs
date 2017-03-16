@@ -7,19 +7,21 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using KlasaMaturalna.Models;
 using Newtonsoft.Json;
+using Xamarin.Forms;
 
 namespace KlasaMaturalna.Services
 {
     public static class APIServices
     {
-        public static async Task<string> addQustionPOST(TodayQuestion questionToAdd)
+        public static async Task<string> addQustionPOST(TodayQuestionPOST questionToAdd)
         {
             string todayDate = DateTime.Today.ToString("yyyy-MM-dd");
             var content = new FormUrlEncodedContent(new[]
             {
                 new KeyValuePair<string, string>("date", todayDate),
                 new KeyValuePair<string, string>("question_number", questionToAdd.question_number),
-                new KeyValuePair<string, string>("question_content", questionToAdd.question_content)
+                new KeyValuePair<string, string>("question_content", questionToAdd.question_content),
+                new KeyValuePair<string, string>("img_src", questionToAdd.img_src)
             });
 
             string url = "http://klasamaturalna.pl/addQuestion.php";
@@ -49,58 +51,64 @@ namespace KlasaMaturalna.Services
             }//end using
         }//end method
 
-        public static async Task<List<TodayQuestion>> quesitonTodayGET()
+        public static List<TodayQuestion> quesitonTodayGET()
         {
-
             string todayDate = DateTime.Today.ToString("yyyy-MM-dd");
             List <TodayQuestion> list = new List<TodayQuestion>();
             
-            string url = $"http://klasamaturalna.pl/ajax.php?get=quesitonTodayGET&date={todayDate}";
+            string url = $"http://klasamaturalna.pl/ajax.php?get=quesitonTodayGET&date="+todayDate;
 
             using (var httpClient = new HttpClient())
             {
                 try
                 {
-                    var result = await httpClient.GetAsync(url);
+                    var result = httpClient.GetAsync(url).Result;
                     if (result.IsSuccessStatusCode)
                     {
                         var responseContent = result.Content;
                         string works = responseContent.ReadAsStringAsync().Result;
                         string[] array = works.Split('}');
                         Regex r = new Regex("id\":\"([0-9]+)\",\"date\":\"([0-9]{4}-[0-9]{2}-[0-9]{2})\",\"question_number\":\"" +
-                                            "([0-9]{1,2})\",\"question_content\":\"([^\"]+)");
+                                            "([0-9]{1,2})\",\"question_content\":\"([^\"]+)\",\"Img\":\"([^\"]+)");
                         foreach (string quest in array)
                         {
                             MatchCollection mch = r.Matches(quest);
                             foreach (Match item in mch)
                             {
+                                string img = item.Groups[5].ToString().Replace("\\", "");
+                                img = img.Replace("\"", "");
                                 list.Add(new TodayQuestion()
                                 {
                                     id = item.Groups[1].ToString(),
                                     date = item.Groups[2].ToString(),
                                     question_number = item.Groups[3].ToString(),
-                                    question_content = item.Groups[4].ToString()
+                                    question_content = item.Groups[4].ToString(),
+                                    img_src = new UriImageSource()
+                                    {
+                                        Uri = new Uri(img)
+                                    }
+                                    
                                 });
                             }
                         }
                         return list;
                     }//end if
                     string errorMessage = result.StatusCode.ToString();
-                    await App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
+                    App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
                     return list;
                 }//end try
                 catch (AggregateException ex)
                 {
                     string ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
                                             " time out, try again letter" : "Turn on your internet conection then try again";
-                    await App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
+                    App.Current.MainPage.DisplayAlert("",ErrorMessage, "", "Ok");
                     return list;
                 }//catch AggregateEx
             }//end using
         }//end method
 
 
-        public static async Task<Question> qeustionRandomGET(int id)
+        public static Question qeustionRandomGET(int id)
         {
             Question question = new Question();
 
@@ -110,7 +118,7 @@ namespace KlasaMaturalna.Services
             {
                 try
                 {
-                    var result = await httpClient.GetAsync(url);
+                    var result = httpClient.GetAsync(url).Result;
                     if (result.IsSuccessStatusCode)
                     {
                         var responseContent = result.Content;
@@ -126,21 +134,21 @@ namespace KlasaMaturalna.Services
                         return question;
                     }//end if
                     string errorMessage = result.StatusCode.ToString();
-                    await App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
+                    App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
                     return question;
                 }//end try
                 catch (AggregateException ex)
                 {
                     string ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
                                             " time out, try again letter" : "Turn on your internet conection then try again";
-                    await App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
+                    App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
                     return question;
                 }//catch AggregateEx
             }//end using
         }//end method
 
 
-        public static async Task<int> countRandomQuesitonsGET()
+        public static int countRandomQuesitonsGET()
         {
             string url = $"http://klasamaturalna.pl/ajax.php?get=countRandomQuesitonsGET";
 
@@ -148,7 +156,7 @@ namespace KlasaMaturalna.Services
             {
                 try
                 {
-                    var result = await httpClient.GetAsync(url);
+                    var result = httpClient.GetAsync(url).Result;
                     if (result.IsSuccessStatusCode)
                     {
                         var responseContent = result.Content;
@@ -163,14 +171,14 @@ namespace KlasaMaturalna.Services
                         return int.Parse(toReturn);
                     }//end if
                     string errorMessage = result.StatusCode.ToString();
-                    await App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
+                    App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
                     return -1;
                 }//end try
                 catch (AggregateException ex)
                 {
                     string ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
                                             " time out, try again letter" : "Turn on your internet conection then try again";
-                    await App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
+                    App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
                     return -1;
                 }//catch AggregateEx
             }//end using

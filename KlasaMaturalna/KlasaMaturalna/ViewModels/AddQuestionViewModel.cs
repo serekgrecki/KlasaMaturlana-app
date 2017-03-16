@@ -26,6 +26,18 @@ namespace KlasaMaturalna.ViewModels
             }
         }
 
+        private bool _isVisableLoading;
+
+        public bool IsVisableLoading
+        {
+            get { return _isVisableLoading; }
+            set
+            {
+                _isVisableLoading = value;
+                OnPropetyChanged();
+            }
+        }
+
         private int _indexNumerQuestion;
 
         public int IndexNumberQuestion
@@ -50,13 +62,25 @@ namespace KlasaMaturalna.ViewModels
             }
         }
 
+        private string _imgSrc;
+
+        public string ImgSrc
+        {
+            get { return _imgSrc; }
+            set
+            {
+                _imgSrc = value;
+                OnPropetyChanged();
+            }
+        }
+
 
         public AddQuestionViewModel()
         {
+            IsVisableLoading = false;
             var addQuestionServices = new AddQuestionServices();
             NumberQuestionsList = addQuestionServices.GetNumbersQuestions();
         }
-
 
         public Command SendQuestionCommand
         {
@@ -68,32 +92,38 @@ namespace KlasaMaturalna.ViewModels
                     {
                     if (QuestionContent.Length > 5)
                     {
-                        TodayQuestion question = new TodayQuestion()
+                        IsVisableLoading = true;
+                        QuestionContent.Replace("\"", "'");
+                        TodayQuestionPOST question = new TodayQuestionPOST()
                         {
                             question_content = QuestionContent,
-                            question_number = (IndexNumberQuestion + 1).ToString()
+                            question_number = (IndexNumberQuestion + 1).ToString(),
+                            img_src = ImgSrc
                         };
-                        string response = APIServices.addQustionPOST(question);
+                        string response = await APIServices.addQustionPOST(question);
                         if (response == "\ntrue")
                         {
+                            IsVisableLoading = false;
                             await App.Current.MainPage.DisplayAlert("", "Twoje pytanie zostało przesłane.", "", "Ok");
                         }
                         else
                         {
+                            IsVisableLoading = false;
                             await App.Current.MainPage.DisplayAlert("", response, "", "Ok");
                         }
                         QuestionContent = "";
+                        ImgSrc = "";
                         IndexNumberQuestion = 0;
-
                     }
                     else
                     {
+                        IsVisableLoading = false;
                         await App.Current.MainPage.DisplayAlert("", "Twoje pytanie jest niepoprawne", "", "Ok");
                     }
                     }
-                    catch (Exception)
+                    catch (Exception ex)
                     {
-
+                        IsVisableLoading = false;
                         await App.Current.MainPage.DisplayAlert("", "Twoje pytanie jest niepoprawne", "", "Ok");
                     }
                 });

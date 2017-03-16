@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using KlasaMaturalna.Models;
 using KlasaMaturalna.Services;
 
 namespace KlasaMaturalna.ViewModels
@@ -23,9 +24,9 @@ namespace KlasaMaturalna.ViewModels
             }
         }
 
-        private List<string> _todayQuestionsList;
+        private List<TodayQuestion> _todayQuestionsList;
 
-        public List<string> TodayQuestionList
+        public List<TodayQuestion> TodayQuestionList
         {
             get { return _todayQuestionsList; }
             set
@@ -48,9 +49,8 @@ namespace KlasaMaturalna.ViewModels
         }
         public TodayQuestionViewModel()
         {
-            var todayQuestionServices = new TodayQuestionServices();
-            TodayDate = todayQuestionServices.GetTodayDate();
-            TodayQuestionList = todayQuestionServices.GetQuestionsToday();
+            TodayDate = DateTime.Today.ToString("yyyy-MM-dd");
+            TodayQuestionList = APIServices.quesitonTodayGET();
             LabelVisable = TodayQuestionList.Count == 0 ? true : false;
         }
 

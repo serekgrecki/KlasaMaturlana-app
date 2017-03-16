@@ -7,13 +7,13 @@ using Xamarin.Forms;
 
 namespace KlasaMaturalna.Models
 {
-     public class TodayQuestion
+     public class TodayQuestionPOST
     {
         public string id { get; set; }
         public string date { get; set; }
         public string question_number { get; set; }
         public string question_content { get; set; }
-        public UriImageSource img_src { get; set; }
+        public string img_src { get; set; }
 
         public string AsString()
         {

@@ -41,12 +41,12 @@
     <Compile Include="Controls\MyPicker.cs" />
     <Compile Include="Controls\CircleButton.cs" />
     <Compile Include="Models\Question.cs" />
+    <Compile Include="Models\TodayQuestionPOST.cs" />
     <Compile Include="Models\TodayQuestion.cs" />
     <Compile Include="Services\AddQuestionServices.cs" />
     <Compile Include="Services\APIServices.cs" />
     <Compile Include="Services\CalculatorPageServices.cs" />
     <Compile Include="Services\DefaultServices.cs" />
-    <Compile Include="Services\TodayQuestionServices.cs" />
     <Compile Include="ViewModels\AddQuestionViewModel.cs" />
     <Compile Include="ViewModels\DefaultViewModel.cs" />
     <Compile Include="ViewModels\RandomQuestionTextViewModel.cs" />

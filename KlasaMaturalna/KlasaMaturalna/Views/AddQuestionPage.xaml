@@ -8,21 +8,17 @@
     <ContentPage.BindingContext>
         <ViewModel:AddQuestionViewModel/>
     </ContentPage.BindingContext>
-    <Grid Padding="20">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="4*"/>
-            <RowDefinition Height="2*"/>
-        </Grid.RowDefinitions>
-        <Label Grid.Row="0" HorizontalOptions="CenterAndExpand" Text="Jesteś już po egzaminie ustnym z języka polskiego? Podziel się pytaniem, które miałeś i pomoż pozostałym maturzystom!"/>
-        <Label Grid.Row="1" Text="Numer pytania:" HorizontalOptions="Start"/>
-        <controls:MyPicker Grid.Row="2" ItemsSource="{Binding NumberQuestionsList}" SelectedIndex="{Binding IndexNumberQuestion}"/>
-        <Label Grid.Row="3" Text="Treść:" HorizontalOptions="Start"/>
-        <Editor Grid.Row="4" Text="{Binding QuestionContent}"/>
-        <Button Grid.Row="5" Text="Wyślij!" FontSize="25" BackgroundColor="#5cb85c" Command="{Binding SendQuestionCommand}"/>
-    </Grid>
-    
+    <ScrollView>
+        <StackLayout Padding="20">
+        <Label HorizontalOptions="CenterAndExpand" Text="Jesteś już po egzaminie ustnym z języka polskiego? Podziel się pytaniem, które miałeś i pomoż pozostałym maturzystom!"/>
+        <Label Text="Numer pytania:" HorizontalOptions="Start"/>
+        <controls:MyPicker  ItemsSource="{Binding NumberQuestionsList}" SelectedIndex="{Binding IndexNumberQuestion}"/>
+        <Label Text="Treść:" HorizontalOptions="Start"/>
+        <Editor Text="{Binding QuestionContent}" VerticalOptions="FillAndExpand"/>
+        <Label Text="Adres do obrazu:" HorizontalOptions="Start"/>
+        <Editor Text="{Binding ImgSrc}"/>
+        <Button Text="Wyślij!" FontSize="25" BackgroundColor="#5cb85c" Command="{Binding SendQuestionCommand}"/>
+        <ActivityIndicator IsRunning="true" IsVisible="{Binding IsVisableLoading}" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </StackLayout>
+    </ScrollView>
 </ContentPage>
