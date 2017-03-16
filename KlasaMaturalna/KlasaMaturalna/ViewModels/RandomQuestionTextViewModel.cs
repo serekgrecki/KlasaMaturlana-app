@@ -27,7 +27,9 @@ namespace KlasaMaturalna.ViewModels
             int id = rnd.Next(1, count + 1);
             zapytanie = APIServices.qeustionRandomGET(id);
             zapytanie.pytanie = zapytanie.pytanie.Replace("\\n", Environment.NewLine);
+            zapytanie.pytanie = zapytanie.pytanie.Replace("\\r","");
             zapytanie.odpowiedz = zapytanie.odpowiedz.Replace("\\n", Environment.NewLine);
+            zapytanie.odpowiedz = zapytanie.odpowiedz.Replace("\\r", "");
             zapytanie.img = zapytanie.img.Replace("\\", "");
             zapytanie.img = zapytanie.img.Replace("\"", "");
             try

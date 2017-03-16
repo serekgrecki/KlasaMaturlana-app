@@ -4,12 +4,4 @@
     <ResultingAbi>armeabi-v7a</ResultingAbi>
     <SdkVersion>19</SdkVersion>
   </Device>
-  <Device id="H8WDU16127001208">
-    <ResultingAbi></ResultingAbi>
-    <SdkVersion>23</SdkVersion>
-  </Device>
-  <Device id="LGH525n9f91d056">
-    <ResultingAbi>armeabi-v7a</ResultingAbi>
-    <SdkVersion>23</SdkVersion>
-  </Device>
 </Devices>
