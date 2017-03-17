@@ -30,6 +30,8 @@ namespace KlasaMaturalna.ViewModels
                     Visible = true;
                     Enable = false;
                   await App.NavigateMasterDetails(new RandomQuestionTextPage());
+                    Visible = false;
+                    Enable = true;
                 });
             }
         }

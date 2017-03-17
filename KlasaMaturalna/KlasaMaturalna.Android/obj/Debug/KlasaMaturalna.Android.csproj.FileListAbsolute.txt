@@ -257,5 +257,7 @@ C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMatur
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\drawable\direction_down.png
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\res\drawable\direction_up.png
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\KlasaMaturalna.Android.dll.mdb
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android.dll.mdb
