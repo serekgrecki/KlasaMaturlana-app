@@ -43,6 +43,7 @@
     <Compile Include="Controls\IInterstitialAdManager.cs" />
     <Compile Include="Controls\MyPicker.cs" />
     <Compile Include="Controls\CircleButton.cs" />
+    <Compile Include="Models\NotifyTaskCompletion.cs" />
     <Compile Include="Models\Question.cs" />
     <Compile Include="Models\TodayQuestionPOST.cs" />
     <Compile Include="Models\TodayQuestion.cs" />

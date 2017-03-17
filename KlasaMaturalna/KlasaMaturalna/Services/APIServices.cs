@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -51,10 +52,10 @@ namespace KlasaMaturalna.Services
             }//end using
         }//end method
 
-        public static List<TodayQuestion> quesitonTodayGET()
+        public static async Task<ObservableCollection<TodayQuestion>> quesitonTodayGET()
         {
             string todayDate = DateTime.Today.ToString("yyyy-MM-dd");
-            List <TodayQuestion> list = new List<TodayQuestion>();
+            ObservableCollection<TodayQuestion> list = new ObservableCollection<TodayQuestion>();
             
             string url = $"http://klasamaturalna.pl/ajax.php?get=quesitonTodayGET&date="+todayDate;
 
@@ -62,10 +63,10 @@ namespace KlasaMaturalna.Services
             {
                 try
                 {
-                    var result = httpClient.GetAsync(url).Result;
+                    var result = await httpClient.GetAsync(url).ConfigureAwait(false);
                     if (result.IsSuccessStatusCode)
                     {
-                        var responseContent = result.Content;
+                        var responseContent =result.Content;
                         string works = responseContent.ReadAsStringAsync().Result;
                         string[] array = works.Split('}');
                         Regex r = new Regex("id\":\"([0-9]+)\",\"date\":\"([0-9]{4}-[0-9]{2}-[0-9]{2})\",\"question_number\":\"" +
@@ -94,14 +95,14 @@ namespace KlasaMaturalna.Services
                         return list;
                     }//end if
                     string errorMessage = result.StatusCode.ToString();
-                    App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
+                    await App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
                     return list;
                 }//end try
                 catch (AggregateException ex)
                 {
                     string ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
                                             " time out, try again letter" : "Turn on your internet conection then try again";
-                    App.Current.MainPage.DisplayAlert("",ErrorMessage, "", "Ok");
+                    await App.Current.MainPage.DisplayAlert("",ErrorMessage, "", "Ok");
                     return list;
                 }//catch AggregateEx
             }//end using

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -13,7 +15,6 @@ namespace KlasaMaturalna.ViewModels
     class TodayQuestionViewModel : INotifyPropertyChanged
     {
         private string _todayDate;
-
         public string TodayDate
         {
             get { return _todayDate; }
@@ -47,11 +48,18 @@ namespace KlasaMaturalna.ViewModels
                 OnPropetyChanged();
             }
         }
+        public NotifyTaskCompletion<ObservableCollection<TodayQuestion>> MyDataBoundList { get; private set; }
         public TodayQuestionViewModel()
         {
+            LabelVisable = true;
             TodayDate = DateTime.Today.ToString("yyyy-MM-dd");
-            TodayQuestionList = APIServices.quesitonTodayGET();
-            LabelVisable = TodayQuestionList.Count == 0 ? true : false;
+            MyDataBoundList = new NotifyTaskCompletion<ObservableCollection<TodayQuestion>>(APIServices.quesitonTodayGET());
+            MyDataBoundList.PropertyChanged += MyDataBoundList_PropertyChanged;
+        }
+
+        private void MyDataBoundList_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            LabelVisable = !MyDataBoundList.IsCompleted ? true : false;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

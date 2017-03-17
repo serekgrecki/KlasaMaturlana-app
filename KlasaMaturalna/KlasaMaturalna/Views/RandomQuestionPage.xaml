@@ -10,7 +10,8 @@
     </ContentPage.BindingContext>
     <ScrollView>
     <StackLayout>
-            <Button Text="LOSUJ PYTANIE" FontSize="30" FontAttributes="Bold" BackgroundColor="#D7393D" Margin="0,150,0,0" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Command="{Binding RandomQustionCommand}"/>
+            <Button Text="LOSUJ PYTANIE" FontSize="30" FontAttributes="Bold" IsEnabled="{Binding Enable}" BackgroundColor="#D7393D" Margin="0,150,0,0" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Command="{Binding RandomQustionCommand}"/>
+            <ActivityIndicator IsRunning="True" IsVisible="{Binding Visible}"></ActivityIndicator>
     <Control:AdMobView Grid.Row="2" VerticalOptions="FillAndExpand"/>
     </StackLayout>
     </ScrollView>

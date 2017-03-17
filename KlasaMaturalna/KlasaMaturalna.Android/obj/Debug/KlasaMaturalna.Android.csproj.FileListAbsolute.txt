@@ -170,6 +170,7 @@ C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturalna\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\KlasaMaturalna.Android.dll.mdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\KlasaMaturalna.Android.csprojResolveAssemblyReference.cache
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android.dll.config
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android.dll
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\KlasaMaturalna.Android.pdb
@@ -210,7 +211,6 @@ C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMatur
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\KlasaMaturalna.Android.csprojResolveAssemblyReference.cache
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\KlasaMaturalna.Android.dll
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\KlasaMaturalna.Android.pdb
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna.Android\obj\Debug\android\bin\KlasaMaturalna.Android.apk

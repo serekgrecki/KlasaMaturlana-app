@@ -74,7 +74,6 @@ namespace KlasaMaturalna.ViewModels
             }
         }
 
-
         public AddQuestionViewModel()
         {
             IsVisableLoading = false;
