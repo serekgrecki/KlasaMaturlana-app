@@ -9,16 +9,17 @@
         <ViewModel:AddQuestionViewModel/>
     </ContentPage.BindingContext>
     <ScrollView>
-        <StackLayout Padding="20">
-        <Label HorizontalOptions="CenterAndExpand" Text="Jesteś już po egzaminie ustnym z języka polskiego? Podziel się pytaniem, które miałeś i pomoż pozostałym maturzystom!"/>
-        <Label Text="Numer pytania:" HorizontalOptions="Start"/>
-        <controls:MyPicker  ItemsSource="{Binding NumberQuestionsList}" SelectedIndex="{Binding IndexNumberQuestion}"/>
-        <Label Text="Treść:" HorizontalOptions="Start"/>
-        <Editor Text="{Binding QuestionContent}" VerticalOptions="FillAndExpand"/>
-        <Label Text="Adres do obrazu:" HorizontalOptions="Start"/>
-        <Editor Text="{Binding ImgSrc}"/>
-        <Button Text="Wyślij!" FontSize="25" BackgroundColor="#5cb85c" Command="{Binding SendQuestionCommand}"/>
-        <ActivityIndicator IsRunning="true" IsVisible="{Binding IsVisableLoading}" VerticalOptions="Center" HorizontalOptions="Center"/>
-            </StackLayout>
+        <StackLayout>
+            <Label Margin="20,20,20,0" HorizontalOptions="CenterAndExpand" Text="Jesteś już po egzaminie ustnym z języka polskiego? Podziel się pytaniem, które miałeś i pomoż pozostałym maturzystom!"/>
+            <Label Margin="20,0,20,0" Text="Numer pytania:" HorizontalOptions="Start"/>
+            <controls:MyPicker Margin="20,0,20,0"  ItemsSource="{Binding NumberQuestionsList}" SelectedIndex="{Binding IndexNumberQuestion}"/>
+            <Label Margin="20,0,20,0" Text="Treść:" HorizontalOptions="Start"/>
+            <Editor Margin="20,0,20,0" Text="{Binding QuestionContent}" VerticalOptions="FillAndExpand"/>
+            <Label Margin="20,0,20,0" Text="Adres do obrazu:" HorizontalOptions="Start"/>
+            <Editor Margin="20,0,20,0" Text="{Binding ImgSrc}"/>
+            <Button Margin="20,0,20,0" Text="Wyślij!" FontSize="25" BackgroundColor="#5cb85c" Command="{Binding SendQuestionCommand}"/>
+            <ActivityIndicator IsRunning="true" IsVisible="{Binding IsVisableLoading}" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <controls:AdMobView VerticalOptions="FillAndExpand"/>
+        </StackLayout>
     </ScrollView>
 </ContentPage>

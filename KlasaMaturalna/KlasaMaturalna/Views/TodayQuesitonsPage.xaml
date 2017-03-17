@@ -3,10 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KlasaMaturalna.Views.TodayQuesitonsPage"
              xmlns:ViewModels="clr-namespace:KlasaMaturalna.ViewModels;assembly=KlasaMaturalna"
+             xmlns:controls="clr-namespace:KlasaMaturalna.Controls;assembly=KlasaMaturalna"
              Title="Dzisiejsze pytania">
     <ContentPage.BindingContext>
         <ViewModels:TodayQuestionViewModel/>
     </ContentPage.BindingContext>
+    <ScrollView>
     <StackLayout Padding="20,20,20,20">
         <Label HorizontalOptions="CenterAndExpand" Text="{Binding TodayDate}"/>
         <Label Text="W czasie trwania egzaminu maturalnego z języka polskiego będzie się tutaj wyświetlała lista pytań na ten dzień"
@@ -23,6 +25,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        
+            <controls:AdMobView VerticalOptions="FillAndExpand"/>
+        <controls:AdBanner AdID="ca-app-pub-4454936709409872/1119595746" Grid.Row="0" Grid.RowSpan="5"/>
     </StackLayout>
+        </ScrollView>
 </ContentPage>

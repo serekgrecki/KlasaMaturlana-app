@@ -121,5 +121,9 @@ C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMatur
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna\obj\Debug\KlasaMaturalna.Views.RandomQuestionTextPage.xaml.g.cs
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna\obj\Debug\KlasaMaturalna.dll
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna\obj\Debug\KlasaMaturalna.pdb
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna\bin\Debug\Mono.Android.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna\bin\Debug\Xamarin.GooglePlayServices.Ads.dll
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna\bin\Debug\Mono.Android.xml
+C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna\obj\Debug\KlasaMaturalna.csprojResolveAssemblyReference.cache
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna\obj\Debug\KlasaMaturalna.dll.mdb
 C:\Users\SZYMON\Desktop\APKA MATURA\KlasaMaturlana-app\KlasaMaturalna\KlasaMaturalna\bin\Debug\KlasaMaturalna.dll.mdb

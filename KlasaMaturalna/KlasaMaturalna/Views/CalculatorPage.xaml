@@ -9,40 +9,22 @@
     <ContentPage.BindingContext>
         <ViewModels:CalculatorViewModel/>
     </ContentPage.BindingContext>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="0.5*"/>
-            <RowDefinition Height="0.5*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Label Grid.Row="0" VerticalOptions="End" IsVisible="{Binding ResultVisable}" HorizontalOptions="Center" Text="Numery pytań które możesz wylosować:"></Label>
-        <Label Grid.Row="1" IsVisible="{Binding ResultVisable}"
+    <ScrollView>
+        <StackLayout>
+        <Label Margin="20,20,20,0" VerticalOptions="End" IsVisible="{Binding ResultVisable}" HorizontalOptions="Center" Text="Numery pytań które możesz wylosować:"/>
+            <Label Margin="20,20,20,0" IsVisible="{Binding ResultVisable}"
                VerticalOptions="End" HorizontalOptions="Center" Text="{Binding Result}" 
                FontSize="25" FontAttributes="Bold" TextColor="Black"/>
-        <Grid Grid.Row="2" Padding="30,0,30,0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Label Grid.Row="0" FontAttributes="Bold" Text="Czas rozpoczęcia pracy komisji:" VerticalOptions="End" HorizontalOptions="Start"/>
-            <controls:MyPicker Grid.Row="1" ItemsSource="{Binding HoursList}" x:Name="pickerHours" HorizontalOptions="FillAndExpand"
+            <Label Margin="20,20,20,0" FontAttributes="Bold" Text="Czas rozpoczęcia pracy komisji:" VerticalOptions="End" HorizontalOptions="Start"/>
+            <controls:MyPicker Margin="20,20,20,0" ItemsSource="{Binding HoursList}" x:Name="pickerHours" HorizontalOptions="FillAndExpand"
                                VerticalOptions="Start" SelectedIndex="{Binding HourIndex, Mode=TwoWay}"/>
-        </Grid>
-        <Grid Grid.Row="3" Padding="30,0,30,0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Label Grid.Row="0" FontAttributes="Bold" Text="Wchodzę jako :" VerticalOptions="End" HorizontalOptions="Start"/>
-            <controls:MyPicker ItemsSource="{Binding QueueNumberList}" Grid.Row="1" x:Name="pickerQueue" HorizontalOptions="Fill"
+            <Label Margin="20,20,20,0" FontAttributes="Bold" Text="Wchodzę jako :" VerticalOptions="End" HorizontalOptions="Start"/>
+            <controls:MyPicker ItemsSource="{Binding QueueNumberList}" Margin="20,20,20,0" x:Name="pickerQueue" HorizontalOptions="Fill"
                                VerticalOptions="Start" SelectedIndex="{Binding QueueNumberIndex, Mode=TwoWay}"/>
-        </Grid>
-        <Grid Grid.Row="4" Padding="30,0,30,0">
-            <Button Opacity="0.8" BackgroundColor="#5cb85c" Command="{Binding GetResponseCommand}"
-                       VerticalOptions="Center" HorizontalOptions="Fill" Text="SPRAWDŹ" >
-            </Button>
-        </Grid>
-    </Grid>
+            <Button Margin="20,20,20,0" Opacity="0.8" BackgroundColor="#5cb85c" Command="{Binding GetResponseCommand}"
+                       VerticalOptions="Center" HorizontalOptions="Fill" Text="SPRAWDŹ" />
+            <controls:AdBanner AdID="ca-app-pub-4454936709409872/1119595746" Grid.Row="0" Grid.RowSpan="5"/>
+            <controls:AdMobView VerticalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

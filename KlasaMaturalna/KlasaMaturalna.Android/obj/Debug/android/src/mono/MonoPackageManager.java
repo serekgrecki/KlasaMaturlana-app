@@ -99,6 +99,8 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "KlasaMaturalna.Android.dll" comes first in this list. */
 		"KlasaMaturalna.Android.dll",
+		"AdMobView.FormsPlugin.Abstractions.dll",
+		"AdMobView.FormsPlugin.Android.dll",
 		"FormsViewGroup.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Design.dll",
@@ -112,6 +114,8 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"Xamarin.GooglePlayServices.Ads.dll",
+		"Xamarin.GooglePlayServices.Base.dll",
 		"KlasaMaturalna.dll",
 	};
 	public static final String[] Dependencies = new String[]{

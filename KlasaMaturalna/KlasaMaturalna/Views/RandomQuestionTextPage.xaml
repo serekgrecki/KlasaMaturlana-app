@@ -3,10 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KlasaMaturalna.Views.RandomQuestionTextPage"
              xmlns:ViewModel="clr-namespace:KlasaMaturalna.ViewModels;assembly=KlasaMaturalna"
-             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
+             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:controls="clr-namespace:KlasaMaturalna.Controls;assembly=KlasaMaturalna">
     <ContentPage.BindingContext>
         <ViewModel:RandomQuestionTextViewModel/>
     </ContentPage.BindingContext>
+    <ScrollView>
     <StackLayout>
         <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
             <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="20">
@@ -16,5 +18,8 @@
                 <Label VerticalOptions="Start" Text="{Binding zapytanie.odpowiedz}" IsVisible="{Binding answerVisible}"/>
             </StackLayout>
         </ScrollView>
+            <controls:AdMobView VerticalOptions="FillAndExpand"/>
+        <controls:AdBanner AdID="ca-app-pub-4454936709409872/1119595746" Grid.Row="0" Grid.RowSpan="5"/>
     </StackLayout>
+        </ScrollView>
 </ContentPage>

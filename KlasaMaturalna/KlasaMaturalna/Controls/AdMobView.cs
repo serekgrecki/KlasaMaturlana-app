@@ -7,8 +7,8 @@ using Xamarin.Forms;
 
 namespace KlasaMaturalna.Controls
 {
-    public class AdMobView : ContentView
+    public class AdMobView : View
     {
-        public AdMobView() { }
+
     }
 }

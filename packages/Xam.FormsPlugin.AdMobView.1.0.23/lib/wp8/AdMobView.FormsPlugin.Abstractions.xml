@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AdMobView.FormsPlugin.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:Xam.FormsPlugin.Abstractions.AdMobView">
+            <summary>
+            AdMobView is Google's AdMob ads control implementation for Xamarin.Forms.
+            </summary>
+        </member>
+        <member name="F:Xam.FormsPlugin.Abstractions.AdMobView.AdUnitIdProperty">
+            <summary>
+            The ID of the AdMob ad to display
+            This is the string Id from your Google Play account
+            </summary>
+        </member>
+        <member name="P:Xam.FormsPlugin.Abstractions.AdMobView.AdUnitId">
+            <summary>
+            The ID of the AdMob ad to display
+            This is the string Id from your Google Play account
+            </summary>
+        </member>
+    </members>
+</doc>

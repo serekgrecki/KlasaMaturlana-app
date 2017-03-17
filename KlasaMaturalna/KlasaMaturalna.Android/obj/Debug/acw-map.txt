@@ -1,3 +1,15 @@
+KlasaMaturalna.Droid.AdBannerRenderer, KlasaMaturalna.Android;md5d4aa9512ee049fa05051427e7dd2bb5c.AdBannerRenderer
+KlasaMaturalna.Droid.AdBannerRenderer, KlasaMaturalna.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d4aa9512ee049fa05051427e7dd2bb5c.AdBannerRenderer
+KlasaMaturalna.Droid.AdBannerRenderer;md5d4aa9512ee049fa05051427e7dd2bb5c.AdBannerRenderer
+klasamaturalna.droid.AdBannerRenderer;md5d4aa9512ee049fa05051427e7dd2bb5c.AdBannerRenderer
+KlasaMaturalna.Droid.AdInterstitialListener, KlasaMaturalna.Android;md5d4aa9512ee049fa05051427e7dd2bb5c.AdInterstitialListener
+KlasaMaturalna.Droid.AdInterstitialListener, KlasaMaturalna.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d4aa9512ee049fa05051427e7dd2bb5c.AdInterstitialListener
+KlasaMaturalna.Droid.AdInterstitialListener;md5d4aa9512ee049fa05051427e7dd2bb5c.AdInterstitialListener
+klasamaturalna.droid.AdInterstitialListener;md5d4aa9512ee049fa05051427e7dd2bb5c.AdInterstitialListener
+KlasaMaturalna.Droid.AdMobViewRenderer, KlasaMaturalna.Android;md5d4aa9512ee049fa05051427e7dd2bb5c.AdMobViewRenderer
+KlasaMaturalna.Droid.AdMobViewRenderer, KlasaMaturalna.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d4aa9512ee049fa05051427e7dd2bb5c.AdMobViewRenderer
+KlasaMaturalna.Droid.AdMobViewRenderer;md5d4aa9512ee049fa05051427e7dd2bb5c.AdMobViewRenderer
+klasamaturalna.droid.AdMobViewRenderer;md5d4aa9512ee049fa05051427e7dd2bb5c.AdMobViewRenderer
 KlasaMaturalna.Droid.circlebuttonrender, KlasaMaturalna.Android;md5d4aa9512ee049fa05051427e7dd2bb5c.circlebuttonrender
 KlasaMaturalna.Droid.circlebuttonrender, KlasaMaturalna.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d4aa9512ee049fa05051427e7dd2bb5c.circlebuttonrender
 KlasaMaturalna.Droid.circlebuttonrender;md5d4aa9512ee049fa05051427e7dd2bb5c.circlebuttonrender
@@ -10,6 +22,10 @@ KlasaMaturalna.Droid.pickerrender, KlasaMaturalna.Android;md5d4aa9512ee049fa0505
 KlasaMaturalna.Droid.pickerrender, KlasaMaturalna.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d4aa9512ee049fa05051427e7dd2bb5c.pickerrender
 KlasaMaturalna.Droid.pickerrender;md5d4aa9512ee049fa05051427e7dd2bb5c.pickerrender
 klasamaturalna.droid.pickerrender;md5d4aa9512ee049fa05051427e7dd2bb5c.pickerrender
+Xam.FormsPlugin.Android.AdMobViewRenderer, AdMobView.FormsPlugin.Android;md534554a6a7878fff5d2b9ebd11f89b6fc.AdMobViewRenderer
+Xam.FormsPlugin.Android.AdMobViewRenderer, AdMobView.FormsPlugin.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md534554a6a7878fff5d2b9ebd11f89b6fc.AdMobViewRenderer
+Xam.FormsPlugin.Android.AdMobViewRenderer;md534554a6a7878fff5d2b9ebd11f89b6fc.AdMobViewRenderer
+xam.formsplugin.android.AdMobViewRenderer;md534554a6a7878fff5d2b9ebd11f89b6fc.AdMobViewRenderer
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
@@ -574,3 +590,95 @@ Xamarin.Forms.Platform.Android.AppCompat.FormsFragmentPagerAdapter`1, Xamarin.Fo
 Xamarin.Forms.Platform.Android.AppCompat.FormsFragmentPagerAdapter`1, Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null;md5270abb39e60627f0f200893b490a1ade.FormsFragmentPagerAdapter_1
 Xamarin.Forms.Platform.Android.AppCompat.FormsFragmentPagerAdapter`1;md5270abb39e60627f0f200893b490a1ade.FormsFragmentPagerAdapter_1
 xamarin.forms.platform.android.appcompat.FormsFragmentPagerAdapter_1;md5270abb39e60627f0f200893b490a1ade.FormsFragmentPagerAdapter_1
+Android.Gms.Ads.DoubleClick.IAppEventListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.android.gms.ads.doubleclick.AppEventListenerImplementor
+Android.Gms.Ads.DoubleClick.IAppEventListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.ads.doubleclick.AppEventListenerImplementor
+Android.Gms.Ads.DoubleClick.IAppEventListenerImplementor;mono.com.google.android.gms.ads.doubleclick.AppEventListenerImplementor
+mono.com.google.android.gms.ads.doubleclick.AppEventListenerImplementor;mono.com.google.android.gms.ads.doubleclick.AppEventListenerImplementor
+Android.Gms.Ads.DoubleClick.IOnCustomRenderedAdLoadedListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.android.gms.ads.doubleclick.OnCustomRenderedAdLoadedListenerImplementor
+Android.Gms.Ads.DoubleClick.IOnCustomRenderedAdLoadedListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.ads.doubleclick.OnCustomRenderedAdLoadedListenerImplementor
+Android.Gms.Ads.DoubleClick.IOnCustomRenderedAdLoadedListenerImplementor;mono.com.google.android.gms.ads.doubleclick.OnCustomRenderedAdLoadedListenerImplementor
+mono.com.google.android.gms.ads.doubleclick.OnCustomRenderedAdLoadedListenerImplementor;mono.com.google.android.gms.ads.doubleclick.OnCustomRenderedAdLoadedListenerImplementor
+Android.Gms.Ads.Formats.INativeCustomTemplateAdOnCustomClickListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.android.gms.ads.formats.NativeCustomTemplateAd_OnCustomClickListenerImplementor
+Android.Gms.Ads.Formats.INativeCustomTemplateAdOnCustomClickListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.ads.formats.NativeCustomTemplateAd_OnCustomClickListenerImplementor
+Android.Gms.Ads.Formats.INativeCustomTemplateAdOnCustomClickListenerImplementor;mono.com.google.android.gms.ads.formats.NativeCustomTemplateAd_OnCustomClickListenerImplementor
+mono.com.google.android.gms.ads.formats.NativeCustomTemplateAd_OnCustomClickListenerImplementor;mono.com.google.android.gms.ads.formats.NativeCustomTemplateAd_OnCustomClickListenerImplementor
+Android.Gms.Ads.Formats.INativeCustomTemplateAdOnCustomTemplateAdLoadedListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.android.gms.ads.formats.NativeCustomTemplateAd_OnCustomTemplateAdLoadedListenerImplementor
+Android.Gms.Ads.Formats.INativeCustomTemplateAdOnCustomTemplateAdLoadedListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.ads.formats.NativeCustomTemplateAd_OnCustomTemplateAdLoadedListenerImplementor
+Android.Gms.Ads.Formats.INativeCustomTemplateAdOnCustomTemplateAdLoadedListenerImplementor;mono.com.google.android.gms.ads.formats.NativeCustomTemplateAd_OnCustomTemplateAdLoadedListenerImplementor
+mono.com.google.android.gms.ads.formats.NativeCustomTemplateAd_OnCustomTemplateAdLoadedListenerImplementor;mono.com.google.android.gms.ads.formats.NativeCustomTemplateAd_OnCustomTemplateAdLoadedListenerImplementor
+Android.Gms.Ads.Formats.NativeAppInstallAd/IOnAppInstallAdLoadedListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.android.gms.ads.formats.NativeAppInstallAd_OnAppInstallAdLoadedListenerImplementor
+Android.Gms.Ads.Formats.NativeAppInstallAd+IOnAppInstallAdLoadedListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.ads.formats.NativeAppInstallAd_OnAppInstallAdLoadedListenerImplementor
+Android.Gms.Ads.Formats.NativeAppInstallAd.IOnAppInstallAdLoadedListenerImplementor;mono.com.google.android.gms.ads.formats.NativeAppInstallAd_OnAppInstallAdLoadedListenerImplementor
+mono.com.google.android.gms.ads.formats.NativeAppInstallAd_OnAppInstallAdLoadedListenerImplementor;mono.com.google.android.gms.ads.formats.NativeAppInstallAd_OnAppInstallAdLoadedListenerImplementor
+Android.Gms.Ads.Formats.NativeContentAd/IOnContentAdLoadedListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.android.gms.ads.formats.NativeContentAd_OnContentAdLoadedListenerImplementor
+Android.Gms.Ads.Formats.NativeContentAd+IOnContentAdLoadedListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.ads.formats.NativeContentAd_OnContentAdLoadedListenerImplementor
+Android.Gms.Ads.Formats.NativeContentAd.IOnContentAdLoadedListenerImplementor;mono.com.google.android.gms.ads.formats.NativeContentAd_OnContentAdLoadedListenerImplementor
+mono.com.google.android.gms.ads.formats.NativeContentAd_OnContentAdLoadedListenerImplementor;mono.com.google.android.gms.ads.formats.NativeContentAd_OnContentAdLoadedListenerImplementor
+Android.Gms.Ads.Mediation.CustomEvent.ICustomEventListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.android.gms.ads.mediation.customevent.CustomEventListenerImplementor
+Android.Gms.Ads.Mediation.CustomEvent.ICustomEventListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.ads.mediation.customevent.CustomEventListenerImplementor
+Android.Gms.Ads.Mediation.CustomEvent.ICustomEventListenerImplementor;mono.com.google.android.gms.ads.mediation.customevent.CustomEventListenerImplementor
+mono.com.google.android.gms.ads.mediation.customevent.CustomEventListenerImplementor;mono.com.google.android.gms.ads.mediation.customevent.CustomEventListenerImplementor
+Android.Gms.Ads.Mediation.IMediationBannerListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.android.gms.ads.mediation.MediationBannerListenerImplementor
+Android.Gms.Ads.Mediation.IMediationBannerListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.ads.mediation.MediationBannerListenerImplementor
+Android.Gms.Ads.Mediation.IMediationBannerListenerImplementor;mono.com.google.android.gms.ads.mediation.MediationBannerListenerImplementor
+mono.com.google.android.gms.ads.mediation.MediationBannerListenerImplementor;mono.com.google.android.gms.ads.mediation.MediationBannerListenerImplementor
+Android.Gms.Ads.Mediation.IMediationInterstitialListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.android.gms.ads.mediation.MediationInterstitialListenerImplementor
+Android.Gms.Ads.Mediation.IMediationInterstitialListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.ads.mediation.MediationInterstitialListenerImplementor
+Android.Gms.Ads.Mediation.IMediationInterstitialListenerImplementor;mono.com.google.android.gms.ads.mediation.MediationInterstitialListenerImplementor
+mono.com.google.android.gms.ads.mediation.MediationInterstitialListenerImplementor;mono.com.google.android.gms.ads.mediation.MediationInterstitialListenerImplementor
+Android.Gms.Ads.Purchase.IInAppPurchaseListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.android.gms.ads.purchase.InAppPurchaseListenerImplementor
+Android.Gms.Ads.Purchase.IInAppPurchaseListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.ads.purchase.InAppPurchaseListenerImplementor
+Android.Gms.Ads.Purchase.IInAppPurchaseListenerImplementor;mono.com.google.android.gms.ads.purchase.InAppPurchaseListenerImplementor
+mono.com.google.android.gms.ads.purchase.InAppPurchaseListenerImplementor;mono.com.google.android.gms.ads.purchase.InAppPurchaseListenerImplementor
+Android.Gms.Ads.Purchase.IPlayStorePurchaseListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.android.gms.ads.purchase.PlayStorePurchaseListenerImplementor
+Android.Gms.Ads.Purchase.IPlayStorePurchaseListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.ads.purchase.PlayStorePurchaseListenerImplementor
+Android.Gms.Ads.Purchase.IPlayStorePurchaseListenerImplementor;mono.com.google.android.gms.ads.purchase.PlayStorePurchaseListenerImplementor
+mono.com.google.android.gms.ads.purchase.PlayStorePurchaseListenerImplementor;mono.com.google.android.gms.ads.purchase.PlayStorePurchaseListenerImplementor
+Android.Gms.Ads.Reward.IRewardedVideoAdListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.android.gms.ads.reward.RewardedVideoAdListenerImplementor
+Android.Gms.Ads.Reward.IRewardedVideoAdListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.ads.reward.RewardedVideoAdListenerImplementor
+Android.Gms.Ads.Reward.IRewardedVideoAdListenerImplementor;mono.com.google.android.gms.ads.reward.RewardedVideoAdListenerImplementor
+mono.com.google.android.gms.ads.reward.RewardedVideoAdListenerImplementor;mono.com.google.android.gms.ads.reward.RewardedVideoAdListenerImplementor
+Android.Gms.Ads.Reward.Mediation.IMediationRewardedVideoAdListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.android.gms.ads.reward.mediation.MediationRewardedVideoAdListenerImplementor
+Android.Gms.Ads.Reward.Mediation.IMediationRewardedVideoAdListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.ads.reward.mediation.MediationRewardedVideoAdListenerImplementor
+Android.Gms.Ads.Reward.Mediation.IMediationRewardedVideoAdListenerImplementor;mono.com.google.android.gms.ads.reward.mediation.MediationRewardedVideoAdListenerImplementor
+mono.com.google.android.gms.ads.reward.mediation.MediationRewardedVideoAdListenerImplementor;mono.com.google.android.gms.ads.reward.mediation.MediationRewardedVideoAdListenerImplementor
+Google.Ads.Mediation.CustomEvent.ICustomEventListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.ads.mediation.customevent.CustomEventListenerImplementor
+Google.Ads.Mediation.CustomEvent.ICustomEventListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.ads.mediation.customevent.CustomEventListenerImplementor
+Google.Ads.Mediation.CustomEvent.ICustomEventListenerImplementor;mono.com.google.ads.mediation.customevent.CustomEventListenerImplementor
+mono.com.google.ads.mediation.customevent.CustomEventListenerImplementor;mono.com.google.ads.mediation.customevent.CustomEventListenerImplementor
+Google.Ads.Mediation.IMediationBannerListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.ads.mediation.MediationBannerListenerImplementor
+Google.Ads.Mediation.IMediationBannerListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.ads.mediation.MediationBannerListenerImplementor
+Google.Ads.Mediation.IMediationBannerListenerImplementor;mono.com.google.ads.mediation.MediationBannerListenerImplementor
+mono.com.google.ads.mediation.MediationBannerListenerImplementor;mono.com.google.ads.mediation.MediationBannerListenerImplementor
+Google.Ads.Mediation.IMediationInterstitialListenerImplementor, Xamarin.GooglePlayServices.Ads;mono.com.google.ads.mediation.MediationInterstitialListenerImplementor
+Google.Ads.Mediation.IMediationInterstitialListenerImplementor, Xamarin.GooglePlayServices.Ads, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.ads.mediation.MediationInterstitialListenerImplementor
+Google.Ads.Mediation.IMediationInterstitialListenerImplementor;mono.com.google.ads.mediation.MediationInterstitialListenerImplementor
+mono.com.google.ads.mediation.MediationInterstitialListenerImplementor;mono.com.google.ads.mediation.MediationInterstitialListenerImplementor
+Android.Gms.Common.Apis.ResultCallback`1, Xamarin.GooglePlayServices.Base;md526b7ac14cffc1a788e82c7b73f3add08.ResultCallback_1
+Android.Gms.Common.Apis.ResultCallback`1, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md526b7ac14cffc1a788e82c7b73f3add08.ResultCallback_1
+Android.Gms.Common.Apis.ResultCallback`1;md526b7ac14cffc1a788e82c7b73f3add08.ResultCallback_1
+android.gms.common.apis.ResultCallback_1;md526b7ac14cffc1a788e82c7b73f3add08.ResultCallback_1
+Android.Gms.Common.Apis.AwaitableResultCallback`1, Xamarin.GooglePlayServices.Base;md526b7ac14cffc1a788e82c7b73f3add08.AwaitableResultCallback_1
+Android.Gms.Common.Apis.AwaitableResultCallback`1, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md526b7ac14cffc1a788e82c7b73f3add08.AwaitableResultCallback_1
+Android.Gms.Common.Apis.AwaitableResultCallback`1;md526b7ac14cffc1a788e82c7b73f3add08.AwaitableResultCallback_1
+android.gms.common.apis.AwaitableResultCallback_1;md526b7ac14cffc1a788e82c7b73f3add08.AwaitableResultCallback_1
+Android.Gms.Common.Apis.IGoogleApiClientConnectionCallbacksImpl, Xamarin.GooglePlayServices.Base;md526b7ac14cffc1a788e82c7b73f3add08.IGoogleApiClientConnectionCallbacksImpl
+Android.Gms.Common.Apis.IGoogleApiClientConnectionCallbacksImpl, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md526b7ac14cffc1a788e82c7b73f3add08.IGoogleApiClientConnectionCallbacksImpl
+Android.Gms.Common.Apis.IGoogleApiClientConnectionCallbacksImpl;md526b7ac14cffc1a788e82c7b73f3add08.IGoogleApiClientConnectionCallbacksImpl
+android.gms.common.apis.IGoogleApiClientConnectionCallbacksImpl;md526b7ac14cffc1a788e82c7b73f3add08.IGoogleApiClientConnectionCallbacksImpl
+Android.Gms.Common.Apis.IGoogleApiClientOnConnectionFailedListenerImpl, Xamarin.GooglePlayServices.Base;md526b7ac14cffc1a788e82c7b73f3add08.IGoogleApiClientOnConnectionFailedListenerImpl
+Android.Gms.Common.Apis.IGoogleApiClientOnConnectionFailedListenerImpl, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md526b7ac14cffc1a788e82c7b73f3add08.IGoogleApiClientOnConnectionFailedListenerImpl
+Android.Gms.Common.Apis.IGoogleApiClientOnConnectionFailedListenerImpl;md526b7ac14cffc1a788e82c7b73f3add08.IGoogleApiClientOnConnectionFailedListenerImpl
+android.gms.common.apis.IGoogleApiClientOnConnectionFailedListenerImpl;md526b7ac14cffc1a788e82c7b73f3add08.IGoogleApiClientOnConnectionFailedListenerImpl
+Android.Gms.Common.Apis.IGoogleApiClientOnConnectionFailedListenerImplementor, Xamarin.GooglePlayServices.Base;mono.com.google.android.gms.common.api.GoogleApiClient_OnConnectionFailedListenerImplementor
+Android.Gms.Common.Apis.IGoogleApiClientOnConnectionFailedListenerImplementor, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.common.api.GoogleApiClient_OnConnectionFailedListenerImplementor
+Android.Gms.Common.Apis.IGoogleApiClientOnConnectionFailedListenerImplementor;mono.com.google.android.gms.common.api.GoogleApiClient_OnConnectionFailedListenerImplementor
+mono.com.google.android.gms.common.api.GoogleApiClient_OnConnectionFailedListenerImplementor;mono.com.google.android.gms.common.api.GoogleApiClient_OnConnectionFailedListenerImplementor
+Android.Gms.Common.Images.ImageManager/IOnImageLoadedListenerImplementor, Xamarin.GooglePlayServices.Base;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
+Android.Gms.Common.Images.ImageManager+IOnImageLoadedListenerImplementor, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
+Android.Gms.Common.Images.ImageManager.IOnImageLoadedListenerImplementor;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
+mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
+Android.Gms.Security.ProviderInstaller/IProviderInstallListenerImplementor, Xamarin.GooglePlayServices.Base;mono.com.google.android.gms.security.ProviderInstaller_ProviderInstallListenerImplementor
+Android.Gms.Security.ProviderInstaller+IProviderInstallListenerImplementor, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.security.ProviderInstaller_ProviderInstallListenerImplementor
+Android.Gms.Security.ProviderInstaller.IProviderInstallListenerImplementor;mono.com.google.android.gms.security.ProviderInstaller_ProviderInstallListenerImplementor
+mono.com.google.android.gms.security.ProviderInstaller_ProviderInstallListenerImplementor;mono.com.google.android.gms.security.ProviderInstaller_ProviderInstallListenerImplementor

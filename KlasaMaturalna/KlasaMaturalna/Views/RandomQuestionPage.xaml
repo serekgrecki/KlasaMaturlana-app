@@ -8,17 +8,10 @@
     <ContentPage.BindingContext>
         <ViewModel:RandomQuestionViewModel/>
     </ContentPage.BindingContext>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="2*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Control:CircleButton Text="LOSUJ PYTANIE" Grid.Row="1" Grid.Column="1" Command="{Binding RandomQustionCommand}"/>
-    </Grid>
+    <ScrollView>
+    <StackLayout>
+            <Button Text="LOSUJ PYTANIE" FontSize="30" FontAttributes="Bold" BackgroundColor="#D7393D" Margin="0,150,0,0" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Command="{Binding RandomQustionCommand}"/>
+    <Control:AdMobView Grid.Row="2" VerticalOptions="FillAndExpand"/>
+    </StackLayout>
+    </ScrollView>
 </ContentPage>
