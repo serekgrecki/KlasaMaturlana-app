@@ -138,6 +138,7 @@
     <Compile Include="AdInterstitalListener.cs" />
     <Compile Include="AdMobViewRenderer.cs" />
     <Compile Include="AdsInterstitalImplementation.cs" />
+    <Compile Include="AndroidMethods.cs" />
     <Compile Include="circlebuttonrender.cs" />
     <Compile Include="CrossAdmobManager.cs" />
     <Compile Include="MainActivity.cs" />

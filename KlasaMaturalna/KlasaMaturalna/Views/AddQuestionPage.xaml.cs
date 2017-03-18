@@ -18,10 +18,5 @@ namespace KlasaMaturalna.Views
             InitializeComponent();
 
         }
-        protected override bool OnBackButtonPressed()
-        {
-            return true;
-        }
-
     }
 }

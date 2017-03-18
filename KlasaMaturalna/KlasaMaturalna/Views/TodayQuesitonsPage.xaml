@@ -14,7 +14,7 @@
             <Label HorizontalOptions="CenterAndExpand" Text="{Binding TodayDate}"/>
             <Label Text="W czasie trwania egzaminu maturalnego z języka polskiego będzie się tutaj wyświetlała lista pytań na ten dzień"
                IsVisible="{Binding LabelVisable}" HorizontalOptions="Center" VerticalOptions="Center"/>
-            <ActivityIndicator IsRunning="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" IsVisible="{Binding LabelVisable}"/>
+            <ActivityIndicator IsRunning="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" IsVisible="{Binding LoadingVisable}"/>
             <ListView HasUnevenRows="True" ItemsSource="{Binding MyDataBoundList.Result}" ItemSelected="ListView_OnItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>

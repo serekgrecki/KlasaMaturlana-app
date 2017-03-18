@@ -48,10 +48,22 @@ namespace KlasaMaturalna.ViewModels
                 OnPropetyChanged();
             }
         }
+        private bool _loadingVisable;
+
+        public bool LoadingVisable
+        {
+            get { return _loadingVisable; }
+            set
+            {
+                _loadingVisable = value;
+                OnPropetyChanged();
+            }
+        }
         public NotifyTaskCompletion<ObservableCollection<TodayQuestion>> MyDataBoundList { get; private set; }
         public TodayQuestionViewModel()
         {
             LabelVisable = true;
+            LoadingVisable = true;
             TodayDate = DateTime.Today.ToString("yyyy-MM-dd");
             MyDataBoundList = new NotifyTaskCompletion<ObservableCollection<TodayQuestion>>(APIServices.quesitonTodayGET());
             MyDataBoundList.PropertyChanged += MyDataBoundList_PropertyChanged;
@@ -59,7 +71,11 @@ namespace KlasaMaturalna.ViewModels
 
         private void MyDataBoundList_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            LabelVisable = !MyDataBoundList.IsCompleted ? true : false;
+            if (MyDataBoundList.IsCompleted)
+            {
+                LabelVisable = MyDataBoundList.Result.Count <= 0 ? true : false;
+                LoadingVisable = false;
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

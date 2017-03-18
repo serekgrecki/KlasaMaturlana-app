@@ -51,6 +51,7 @@
     <Compile Include="Services\APIServices.cs" />
     <Compile Include="Services\CalculatorPageServices.cs" />
     <Compile Include="Services\DefaultServices.cs" />
+    <Compile Include="Services\IAndroidMethods.cs" />
     <Compile Include="ViewModels\AddQuestionViewModel.cs" />
     <Compile Include="ViewModels\DefaultViewModel.cs" />
     <Compile Include="ViewModels\RandomQuestionTextViewModel.cs" />
