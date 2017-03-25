@@ -12,13 +12,13 @@
     <StackLayout>
         <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
             <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="20">
-                <Label VerticalOptions="Start" Text="{Binding zapytanie.pytanie}"/>
+                <Label VerticalOptions="Start" Text="{Binding zapytanie.pytanie}" TextColor="Black" FontAttributes="Bold"/>
                 <Image Aspect="AspectFit" Source="{Binding img}"/>
                 <Button Text="SPRAWDŹ ODPOWIEDŹ" VerticalOptions="Start"  FontSize="25" BackgroundColor="#5cb85c" Command="{Binding AnswerCommand}"/>
-                <Label VerticalOptions="Start" Text="{Binding zapytanie.odpowiedz}" IsVisible="{Binding answerVisible}"/>
+                    <Label TextColor="Black" FontAttributes="Bold" VerticalOptions="Start" Text="{Binding zapytanie.odpowiedz}" IsVisible="{Binding answerVisible}"/>
             </StackLayout>
         </ScrollView>
-            <controls:AdMobView VerticalOptions="FillAndExpand"/>
+            <controls:AdMobView HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand"/>
         <controls:AdBanner AdID="ca-app-pub-4454936709409872/1119595746" Grid.Row="0" Grid.RowSpan="5"/>
     </StackLayout>
         </ScrollView>

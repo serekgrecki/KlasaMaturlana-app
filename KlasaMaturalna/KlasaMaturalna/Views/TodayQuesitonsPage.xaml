@@ -4,15 +4,16 @@
              x:Class="KlasaMaturalna.Views.TodayQuesitonsPage"
              xmlns:ViewModels="clr-namespace:KlasaMaturalna.ViewModels;assembly=KlasaMaturalna"
              xmlns:controls="clr-namespace:KlasaMaturalna.Controls;assembly=KlasaMaturalna"
-             Title="Dzisiejsze pytania">
+             Title="Dzisiejsze pytania"
+             BackgroundImage="{Binding BgSource}">
     <ContentPage.BindingContext>
         <ViewModels:TodayQuestionViewModel/>
     </ContentPage.BindingContext>
     <ScrollView>
         <StackLayout>
             <controls:AdBanner AdID="ca-app-pub-4454936709409872/1119595746" />
-            <Label HorizontalOptions="CenterAndExpand" Text="{Binding TodayDate}"/>
-            <Label Text="W czasie trwania egzaminu maturalnego z języka polskiego będzie się tutaj wyświetlała lista pytań na ten dzień"
+            <Label HorizontalOptions="CenterAndExpand" Text="{Binding TodayDate}" TextColor="Black" FontAttributes="Bold"/>
+            <Label TextColor="Black" FontAttributes="Bold" Text="W czasie trwania egzaminu maturalnego z języka polskiego będzie się tutaj wyświetlała lista pytań na ten dzień"
                IsVisible="{Binding LabelVisable}" HorizontalOptions="Center" VerticalOptions="Center"/>
             <ActivityIndicator IsRunning="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" IsVisible="{Binding LoadingVisable}"/>
             <ListView HasUnevenRows="True" ItemsSource="{Binding MyDataBoundList.Result}" ItemSelected="ListView_OnItemSelected">
@@ -20,13 +21,14 @@
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout>
-                                <Label Text="{Binding question_content}" Margin="10,0,10,10"/>
+                                <Label TextColor="Black" FontAttributes="Bold" Text="{Binding question_content}" Margin="10,0,10,10"/>
                                 <Image Source="{Binding img_src}" Margin="10,10,10,10" Aspect="AspectFit"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <controls:AdMobView HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

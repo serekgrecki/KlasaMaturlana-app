@@ -4,22 +4,22 @@
              x:Class="KlasaMaturalna.Views.AddQuestionPage"
              xmlns:controls="clr-namespace:KlasaMaturalna.Controls"
              xmlns:ViewModel="clr-namespace:KlasaMaturalna.ViewModels;assembly=KlasaMaturalna"
-             Title="Dodaj pytanie">
+             Title="Dodaj pytanie" BackgroundImage="usmiech.png">
     <ContentPage.BindingContext>
         <ViewModel:AddQuestionViewModel/>
     </ContentPage.BindingContext>
     <ScrollView>
         <StackLayout>
-            <Label Margin="20,20,20,0" HorizontalOptions="CenterAndExpand" Text="Jesteś już po egzaminie ustnym z języka polskiego? Podziel się pytaniem, które miałeś i pomoż pozostałym maturzystom!"/>
-            <Label Margin="20,0,20,0" Text="Numer pytania:" HorizontalOptions="Start"/>
+            <Label Margin="20,20,20,0" HorizontalOptions="CenterAndExpand" TextColor="Black" FontAttributes="Bold" Text="Jesteś już po egzaminie ustnym z języka polskiego? Podziel się pytaniem, które miałeś i pomoż pozostałym maturzystom!"/>
+            <Label Margin="20,0,20,0" Text="Numer pytania:" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start"/>
             <controls:MyPicker Margin="20,0,20,0"  ItemsSource="{Binding NumberQuestionsList}" SelectedIndex="{Binding IndexNumberQuestion}"/>
-            <Label Margin="20,0,20,0" Text="Treść:" HorizontalOptions="Start"/>
-            <Editor Margin="20,0,20,0" Text="{Binding QuestionContent}" VerticalOptions="FillAndExpand"/>
-            <Label Margin="20,0,20,0" Text="Adres do obrazu:" HorizontalOptions="Start"/>
+            <Label Margin="20,0,20,0" Text="Treść:" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start"/>
+            <Editor Margin="20,0,20,0" Text="{Binding QuestionContent}" TextColor="Black" FontAttributes="Bold" VerticalOptions="FillAndExpand"/>
+            <Label Margin="20,0,20,0" Text="Adres do obrazu:" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start"/>
             <Editor Margin="20,0,20,0" Text="{Binding ImgSrc}"/>
-            <Button Margin="20,0,20,0" Text="Wyślij!" FontSize="25" BackgroundColor="#5cb85c" Command="{Binding SendQuestionCommand}"/>
+            <Button Margin="20,0,20,0" Text="Wyślij!" FontSize="25" TextColor="Black" FontAttributes="Bold" BackgroundColor="#5cb85c" Opacity="0.8" Command="{Binding SendQuestionCommand}"/>
             <ActivityIndicator IsRunning="true" IsVisible="{Binding IsVisableLoading}" VerticalOptions="Center" HorizontalOptions="Center"/>
-            <controls:AdMobView VerticalOptions="FillAndExpand"/>
+            <controls:AdMobView HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

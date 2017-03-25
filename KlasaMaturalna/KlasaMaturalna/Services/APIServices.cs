@@ -40,14 +40,15 @@ namespace KlasaMaturalna.Services
                     }//end if
                     string errorMessage = result.StatusCode.ToString();
                     await App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
-                    return errorMessage;
+                    return null;
                 }//end try
                 catch (AggregateException ex)
                 {
-                    string ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
+                    string ErrorMessage = "";
+                    ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
                                             " time out, try again letter" : "Turn on your internet conection then try again";
                     await App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
-                    return ErrorMessage;
+                    return null;
                 }//catch AggregateEx
             }//end using
         }//end method
@@ -96,14 +97,15 @@ namespace KlasaMaturalna.Services
                     }//end if
                     string errorMessage = result.StatusCode.ToString();
                     await App.Current.MainPage.DisplayAlert("", errorMessage, "", "Ok");
-                    return list;
+                    return null;
                 }//end try
                 catch (AggregateException ex)
                 {
-                    string ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
+                    string ErrorMessage = "";
+                    ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
                                             " time out, try again letter" : "Turn on your internet conection then try again";
                     await App.Current.MainPage.DisplayAlert("",ErrorMessage, "", "Ok");
-                    return list;
+                    return null;
                 }//catch AggregateEx
             }//end using
         }//end method
@@ -140,10 +142,11 @@ namespace KlasaMaturalna.Services
                 }//end try
                 catch (AggregateException ex)
                 {
-                    string ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
+                    string ErrorMessage = "";
+                    ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
                                             " time out, try again letter" : "Turn on your internet conection then try again";
                     App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
-                    return question;
+                    return null;
                 }//catch AggregateEx
             }//end using
         }//end method
@@ -163,7 +166,7 @@ namespace KlasaMaturalna.Services
                         var responseContent = result.Content;
                         string works = responseContent.ReadAsStringAsync().Result;
                         string toReturn = "";
-                        Regex r = new Regex("([0-9^+])");
+                        Regex r = new Regex("([0-9^]+)");
                         MatchCollection mch = r.Matches(works);
                         foreach (Match item in mch)
                         {
@@ -177,7 +180,8 @@ namespace KlasaMaturalna.Services
                 }//end try
                 catch (AggregateException ex)
                 {
-                    string ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
+                    string ErrorMessage = "";
+                    ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
                                             " time out, try again letter" : "Turn on your internet conection then try again";
                     App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
                     return -1;

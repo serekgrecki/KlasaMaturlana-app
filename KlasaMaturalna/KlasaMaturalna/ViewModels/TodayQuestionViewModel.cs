@@ -7,6 +7,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using Android.Text.Style;
 using KlasaMaturalna.Models;
 using KlasaMaturalna.Services;
 
@@ -21,6 +22,16 @@ namespace KlasaMaturalna.ViewModels
             set
             {
                 _todayDate = value;
+                OnPropetyChanged();
+            }
+        }
+        private string _bgsource;
+        public string BgSource
+        {
+            get { return _bgsource; }
+            set
+            {
+                _bgsource = value;
                 OnPropetyChanged();
             }
         }
@@ -75,6 +86,10 @@ namespace KlasaMaturalna.ViewModels
             {
                 LabelVisable = MyDataBoundList.Result.Count <= 0 ? true : false;
                 LoadingVisable = false;
+                if (LabelVisable)
+                {
+                    BgSource = "balony.png";
+                }
             }
         }
 

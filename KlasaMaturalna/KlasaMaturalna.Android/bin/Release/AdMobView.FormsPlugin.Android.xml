@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AdMobView.FormsPlugin.Android</name>
+    </assembly>
+    <members>
+        <member name="T:Xam.FormsPlugin.Android.AdMobViewRenderer">
+            <summary>
+            AdMobView renderer implementation for Google AdView ads for Xamarin.Android.
+            </summary>
+        </member>
+        <member name="M:Xam.FormsPlugin.Android.AdMobViewRenderer.Init">
+            <summary>
+            Used for registration with dependency service
+            </summary>
+        </member>
+        <member name="M:Xam.FormsPlugin.Android.AdMobViewRenderer.OnElementChanged(Xamarin.Forms.Platform.Android.ElementChangedEventArgs{Xamarin.Forms.View})">
+            <summary>
+            reload the view and hit up google admob 
+            </summary>
+            <param name="e"></param>
+        </member>
+    </members>
+</doc>

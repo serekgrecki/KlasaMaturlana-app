@@ -16,33 +16,51 @@ namespace KlasaMaturalna.ViewModels
     {
 
         public UriImageSource img { get; set; }
-     
-        private int count = 1;
+
+        private int count;
+        public static int GetRandomInt(int start, int end)
+        {
+            Random rnd = new Random();
+            int rnum = start + Convert.ToInt32(Math.Floor(rnd.NextDouble() * (end - start + 1)));
+            return rnum;
+        }
 
         public RandomQuestionTextViewModel()
         {
-            
-            this.count = APIServices.countRandomQuesitonsGET();
-            Random rnd = new Random();
-            int id = rnd.Next(1, count + 1);
-            zapytanie = APIServices.qeustionRandomGET(id);
-            zapytanie.pytanie = zapytanie.pytanie.Replace("\\n", Environment.NewLine);
-            zapytanie.pytanie = zapytanie.pytanie.Replace("\\r","");
-            zapytanie.odpowiedz = zapytanie.odpowiedz.Replace("\\n", Environment.NewLine);
-            zapytanie.odpowiedz = zapytanie.odpowiedz.Replace("\\r", "");
-            zapytanie.img = zapytanie.img.Replace("\\", "");
-            zapytanie.img = zapytanie.img.Replace("\"", "");
             try
             {
-                img = new UriImageSource()
+                int id;
+                Random rnd = new Random();
+                this.count = APIServices.countRandomQuesitonsGET();
+                if (GetRandomInt(1, 2000)%2 == 0)
+                    id = GetRandomInt(1, count);
+                else
+                    id = rnd.Next(1, count);
+
+
+                zapytanie = APIServices.qeustionRandomGET(id);
+                zapytanie.pytanie = zapytanie.pytanie.Replace("\\n", Environment.NewLine);
+                zapytanie.pytanie = zapytanie.pytanie.Replace("\\r", "");
+                zapytanie.odpowiedz = zapytanie.odpowiedz.Replace("\\n", Environment.NewLine);
+                zapytanie.odpowiedz = zapytanie.odpowiedz.Replace("\\r", "");
+                zapytanie.img = zapytanie.img.Replace("\\", "");
+                zapytanie.img = zapytanie.img.Replace("\"", "");
+                try
                 {
-                    Uri = new Uri(zapytanie.img)
-                };
+                    img = new UriImageSource()
+                    {
+                        Uri = new Uri(zapytanie.img)
+                    };
+                }
+                catch (Exception)
+                {
+                }
             }
-            catch (Exception )
+            catch
             {
+               App.Current.MainPage.DisplayAlert("","Kosmici potrzebują połączenia z internetem.", "", "Ok");
             }
-           
+
         }
 
         private Question _question;

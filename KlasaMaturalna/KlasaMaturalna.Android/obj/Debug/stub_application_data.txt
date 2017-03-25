@@ -1,2 +1,2 @@
 android.app.Application
-KlasaMaturalna.Android
+com.KlasaMaturalna.Klasa_Maturalna

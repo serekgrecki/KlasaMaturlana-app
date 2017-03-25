@@ -5,26 +5,26 @@
              xmlns:controls="clr-namespace:KlasaMaturalna.Controls;assembly=KlasaMaturalna"
              xmlns:ViewModels="clr-namespace:KlasaMaturalna.ViewModels;assembly=KlasaMaturalna"
              x:Class="KlasaMaturalna.CalculatorPage"
-             Title="Kalkulator">
+             Title="Kalkulator"
+             BackgroundImage="usmiech.png">
     <ContentPage.BindingContext>
         <ViewModels:CalculatorViewModel/>
     </ContentPage.BindingContext>
     <ScrollView>
         <StackLayout>
-        <Label Margin="20,20,20,0" VerticalOptions="End" IsVisible="{Binding ResultVisable}" HorizontalOptions="Center" Text="Numery pytań które możesz wylosować:"/>
-            <Label Margin="20,20,20,0" IsVisible="{Binding ResultVisable}"
-               VerticalOptions="End" HorizontalOptions="Center" Text="{Binding Result}" 
+            <Label TextColor="Black" FontAttributes="Bold" Margin="20,20,20,0" VerticalOptions="End" IsVisible="{Binding ResultVisable}" HorizontalOptions="Center" Text="Numery pytań które możesz wylosować:"/>
+            <Label Margin="20,0,20,0" IsVisible="{Binding ResultVisable}" HorizontalOptions="Center" Text="{Binding Result}" 
                FontSize="25" FontAttributes="Bold" TextColor="Black"/>
-            <Label Margin="20,20,20,0" FontAttributes="Bold" Text="Czas rozpoczęcia pracy komisji:" VerticalOptions="End" HorizontalOptions="Start"/>
+            <Label Margin="20,20,20,0" TextColor="Black" FontAttributes="Bold" Text="Czas rozpoczęcia pracy komisji:" VerticalOptions="End" HorizontalOptions="Start"/>
             <controls:MyPicker Margin="20,20,20,0" ItemsSource="{Binding HoursList}" x:Name="pickerHours" HorizontalOptions="FillAndExpand"
                                VerticalOptions="Start" SelectedIndex="{Binding HourIndex, Mode=TwoWay}"/>
-            <Label Margin="20,20,20,0" FontAttributes="Bold" Text="Wchodzę jako :" VerticalOptions="End" HorizontalOptions="Start"/>
+            <Label Margin="20,20,20,0" TextColor="Black" FontAttributes="Bold" Text="Wchodzę jako :" VerticalOptions="End" HorizontalOptions="Start"/>
             <controls:MyPicker ItemsSource="{Binding QueueNumberList}" Margin="20,20,20,0" x:Name="pickerQueue" HorizontalOptions="Fill"
                                VerticalOptions="Start" SelectedIndex="{Binding QueueNumberIndex, Mode=TwoWay}"/>
-            <Button Margin="20,20,20,0" Opacity="0.8" BackgroundColor="#5cb85c" Command="{Binding GetResponseCommand}"
+            <Button Margin="20,20,20,0" FontSize="25" TextColor="Black" FontAttributes="Bold" BackgroundColor="#5cb85c" Opacity="0.8" Command="{Binding GetResponseCommand}"
                        VerticalOptions="Center" HorizontalOptions="Fill" Text="SPRAWDŹ" />
             <controls:AdBanner AdID="ca-app-pub-4454936709409872/1119595746" Grid.Row="0" Grid.RowSpan="5"/>
-            <controls:AdMobView VerticalOptions="FillAndExpand"/>
+            <controls:AdMobView HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

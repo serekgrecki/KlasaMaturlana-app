@@ -10,16 +10,16 @@
     </ContentPage.BindingContext>
     <ScrollView>
     <StackLayout>
-            <controls:AdMobView VerticalOptions="FillAndExpand"/>
-            <Label Margin="20,20,20,0" HorizontalTextAlignment="Center" Text="Witaj w aplikacji Klasa Maturalna - aplikacji niezbędnej dla każdego maturzysty!"/>
-        <Label Margin="20,0,20,0" HorizontalTextAlignment="Center" Text="Zapraszamy na naszą stronę internetową zawierającą mnóstwo przydatnych materiałów."/>
-        <Label Margin="20,0,20,0" Text=""/>
-        <Label Margin="20,0,20,0" FontSize="20" FontAttributes="Bold" Text="TERMINARZ : " HorizontalOptions="Start"/>
+            <controls:AdMobView HorizontalOptions="FillAndExpand" VerticalOptions="Start"/>
+            <Label Margin="20,20,20,0" HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Bold" Text="Witaj w aplikacji Klasa Maturalna - aplikacji niezbędnej dla każdego maturzysty!"/>
+            <Label Margin="20,0,20,0" TextColor="Black" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Zapraszamy na naszą stronę internetową zawierającą mnóstwo przydatnych materiałów."/>
+            <Label Margin="20,0,20,0" TextColor="Black" FontAttributes="Bold" Text=""/>
+            <Label Margin="20,0,20,0" FontSize="20" TextColor="Black" FontAttributes="Bold" Text="TERMINARZ : " HorizontalOptions="Start"/>
         <ListView Margin="20,0,20,0" HasUnevenRows="True" ItemsSource="{Binding Timetable}" ItemSelected="ListView_OnItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                            <Label Text="{Binding}"></Label>
+                            <Label TextColor="Black" FontAttributes="Bold" Text="{Binding}"/>
                         </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

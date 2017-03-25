@@ -4,16 +4,16 @@
              x:Class="KlasaMaturalna.Views.RandomQuestionPage"
              xmlns:Control="clr-namespace:KlasaMaturalna.Controls;assembly=KlasaMaturalna"
              xmlns:ViewModel="clr-namespace:KlasaMaturalna.ViewModels;assembly=KlasaMaturalna"
-             Title="Losuj pytanie">
+             Title="Losuj pytanie"
+             BackgroundImage="dlugopis.png">
     <ContentPage.BindingContext>
         <ViewModel:RandomQuestionViewModel/>
     </ContentPage.BindingContext>
     <ScrollView>
-    <StackLayout>
-       <Image Source="direction_down.png" Aspect="AspectFit" Margin="0,0,0,-30"/>
-            <Button Text="LOSUJ PYTANIE" FontSize="30" FontAttributes="Bold" Margin="20,0,20,0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Command="{Binding RandomQustionCommand}"/>
-            <Image Source="direction_up.png" Aspect="AspectFit" Margin="0,-30,0,0"/>
-            <Control:AdMobView VerticalOptions="FillAndExpand"/>
-    </StackLayout>
+        <StackLayout>
+            <Control:AdMobView HorizontalOptions="FillAndExpand"/>
+            <Button Text="LOSUJ PYTANIE" FontSize="30" TextColor="Black" FontAttributes="Bold"
+                     HorizontalOptions="FillAndExpand" Command="{Binding RandomQustionCommand}"/>
+        </StackLayout>
     </ScrollView>
 </ContentPage>
