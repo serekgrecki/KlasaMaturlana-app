@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{12DE7C1E-3F89-421F-8E24-EB07A7538F8A}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Program Files (x86)\MSBuild\Xamarin\Android\Xamarin.Android.Common.targets" line="1399" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\..\..\Program Files (x86)\MSBuild\Xamarin\Android\Xamarin.Android.Common.targets">
+    <Files>
+      <File FileName="..\..\..\..\..\Program Files (x86)\MSBuild\Xamarin\Android\Xamarin.Android.Common.targets" Line="1399" Column="20" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.KlasaMaturalna.Android PreferredExecutionTarget="Android.5&quot; KitKat (4.4) XXHDPI Phone" />
+  <MultiItemStartupConfigurations />
+</Properties>

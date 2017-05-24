@@ -17,6 +17,8 @@
                 BackgroundColor="Transparent" BorderColor="Transparent"/>
         <Button Text="Dodaj pytanie" FontAttributes="Bold" x:Name="btnAddQuestionsPage" HorizontalOptions="Start" 
                 BackgroundColor="Transparent" BorderColor="Transparent"/>
+        <Button Text="Statystki" FontAttributes="Bold" x:Name="btnStatisticPage" HorizontalOptions="Start" 
+                BackgroundColor="Transparent" BorderColor="Transparent"/>
         <Label Text="www.klasamaturalna.pl">
             <Label.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped" NumberOfTapsRequired="1"/>

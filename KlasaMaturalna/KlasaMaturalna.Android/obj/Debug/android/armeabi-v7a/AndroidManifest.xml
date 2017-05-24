@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.KlasaMaturalna.Klasa_Maturalna" android:versionCode="131073" android:versionName="0.2">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.KlasaMaturalna.Klasa_Maturalna" android:versionName="0.2" android:versionCode="131074">
   <!--suppress UsesMinSdkAttributes-->
   <uses-sdk android:minSdkVersion="14" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

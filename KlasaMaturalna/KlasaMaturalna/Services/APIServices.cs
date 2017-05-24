@@ -46,7 +46,7 @@ namespace KlasaMaturalna.Services
                 {
                     string ErrorMessage = "";
                     ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
-                                            " time out, try again letter" : "Turn on your internet conection then try again";
+                                                                                         " time out, try again letter" : "Turn on your internet conection then try again";
                     await App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
                     return null;
                 }//catch AggregateEx
@@ -57,8 +57,8 @@ namespace KlasaMaturalna.Services
         {
             string todayDate = DateTime.Today.ToString("yyyy-MM-dd");
             ObservableCollection<TodayQuestion> list = new ObservableCollection<TodayQuestion>();
-            
-            string url = $"http://klasamaturalna.pl/ajax.php?get=quesitonTodayGET&date="+todayDate;
+
+            string url = $"http://klasamaturalna.pl/ajax.php?get=quesitonTodayGET&date=" + todayDate;
 
             using (var httpClient = new HttpClient())
             {
@@ -67,11 +67,10 @@ namespace KlasaMaturalna.Services
                     var result = await httpClient.GetAsync(url).ConfigureAwait(false);
                     if (result.IsSuccessStatusCode)
                     {
-                        var responseContent =result.Content;
+                        var responseContent = result.Content;
                         string works = responseContent.ReadAsStringAsync().Result;
                         string[] array = works.Split('}');
-                        Regex r = new Regex("id\":\"([0-9]+)\",\"date\":\"([0-9]{4}-[0-9]{2}-[0-9]{2})\",\"question_number\":\"" +
-                                            "([0-9]{1,2})\",\"question_content\":\"([^\"]+)\",\"Img\":\"([^\"]+)");
+                        Regex r = new Regex("id\":\"([0-9]+)\",\"date\":\"([0-9]{4}-[0-9]{2}-[0-9]{2})\",\"question_number\":\"([0-9]{1,2})\",\"question_content\":\"([^\"]+)\",\"Img\":\"?([^\"]*)");
                         foreach (string quest in array)
                         {
                             MatchCollection mch = r.Matches(quest);
@@ -79,6 +78,8 @@ namespace KlasaMaturalna.Services
                             {
                                 string img = item.Groups[5].ToString().Replace("\\", "");
                                 img = img.Replace("\"", "");
+                                if (img == "null")
+                                    img = "http://klasamaturalna.pl/nic.jpg";
                                 list.Add(new TodayQuestion()
                                 {
                                     id = item.Groups[1].ToString(),
@@ -89,7 +90,7 @@ namespace KlasaMaturalna.Services
                                     {
                                         Uri = new Uri(img)
                                     }
-                                    
+
                                 });
                             }
                         }
@@ -103,8 +104,8 @@ namespace KlasaMaturalna.Services
                 {
                     string ErrorMessage = "";
                     ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
-                                            " time out, try again letter" : "Turn on your internet conection then try again";
-                    await App.Current.MainPage.DisplayAlert("",ErrorMessage, "", "Ok");
+                                                                                         " time out, try again letter" : "Turn on your internet conection then try again";
+                    await App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
                     return null;
                 }//catch AggregateEx
             }//end using
@@ -126,13 +127,14 @@ namespace KlasaMaturalna.Services
                     {
                         var responseContent = result.Content;
                         string works = responseContent.ReadAsStringAsync().Result;
-                        Regex r = new Regex("\"pytanie\":\"([^\"]+)\",\"odpowiedz\":\"([^\"]+)\",\"img\":(null|\"[^\"]+)");
+                        Regex r = new Regex("id\":\"([^\"]+)\",\"pytanie\":\"([^\"]+)\",\"odpowiedz\":\"([^\"]+)\",\"img\":(null|\"[^\"]+)");
                         MatchCollection mch = r.Matches(works);
                         foreach (Match ite in mch)
                         {
-                            question.pytanie = ite.Groups[1].ToString();
-                            question.odpowiedz = ite.Groups[2].ToString();
-                            question.img = ite.Groups[3].ToString();
+                            question.id = ite.Groups[1].ToString();
+                            question.pytanie = ite.Groups[2].ToString();
+                            question.odpowiedz = ite.Groups[3].ToString();
+                            question.img = ite.Groups[4].ToString().Replace("\\", "").Replace("\"", "");
                         }
                         return question;
                     }//end if
@@ -144,7 +146,7 @@ namespace KlasaMaturalna.Services
                 {
                     string ErrorMessage = "";
                     ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
-                                            " time out, try again letter" : "Turn on your internet conection then try again";
+                                                                                         " time out, try again letter" : "Turn on your internet conection then try again";
                     App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
                     return null;
                 }//catch AggregateEx
@@ -182,7 +184,7 @@ namespace KlasaMaturalna.Services
                 {
                     string ErrorMessage = "";
                     ErrorMessage = ex.InnerException.Message == "A task was canceled." ? "Try again letter connection" +
-                                            " time out, try again letter" : "Turn on your internet conection then try again";
+                                                                                         " time out, try again letter" : "Turn on your internet conection then try again";
                     App.Current.MainPage.DisplayAlert("", ErrorMessage, "", "Ok");
                     return -1;
                 }//catch AggregateEx

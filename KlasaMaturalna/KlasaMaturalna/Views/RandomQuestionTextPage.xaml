@@ -4,22 +4,41 @@
              x:Class="KlasaMaturalna.Views.RandomQuestionTextPage"
              xmlns:ViewModel="clr-namespace:KlasaMaturalna.ViewModels;assembly=KlasaMaturalna"
              xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-             xmlns:controls="clr-namespace:KlasaMaturalna.Controls;assembly=KlasaMaturalna">
+             xmlns:controls="clr-namespace:KlasaMaturalna.Controls;assembly=KlasaMaturalna"
+             xmlns:servic="clr-namespace:KlasaMaturalna.Services;assembly=KlasaMaturalna">
     <ContentPage.BindingContext>
         <ViewModel:RandomQuestionTextViewModel/>
     </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <servic:BoolToOppositeBoolConverter x:Key="BoolConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ScrollView>
-    <StackLayout>
-        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
-            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="20">
-                <Label VerticalOptions="Start" Text="{Binding zapytanie.pytanie}" TextColor="Black" FontAttributes="Bold"/>
-                <Image Aspect="AspectFit" Source="{Binding img}"/>
-                <Button Text="SPRAWDŹ ODPOWIEDŹ" VerticalOptions="Start"  FontSize="25" BackgroundColor="#5cb85c" Command="{Binding AnswerCommand}"/>
+        <StackLayout>
+            <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="20">
+                    <Label VerticalOptions="Start" Text="{Binding zapytanie.pytanie}" TextColor="Black" FontAttributes="Bold"/>
+                    <Image Aspect="AspectFit" Source="{Binding zapytanie.img}"/>
+                    <Button Text="SPRAWDŹ ODPOWIEDŹ" VerticalOptions="Start"  FontSize="25" BackgroundColor="#5cb85c" Command="{Binding AnswerCommand}"/>
                     <Label TextColor="Black" FontAttributes="Bold" VerticalOptions="Start" Text="{Binding zapytanie.odpowiedz}" IsVisible="{Binding answerVisible}"/>
-            </StackLayout>
-        </ScrollView>
+                    <Label Text="Czy odpowiedziałeś prawidłowo?" FontSize="25" FontAttributes="Bold" IsVisible="{Binding answerVisible}" />
+                    <Grid >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Button IsVisible="{Binding answerVisible}" IsEnabled="{Binding visibleStatInfo,Converter={StaticResource BoolConverter}}" Text="TAK" BackgroundColor="#5cb85c" Command="{Binding AnswerYESCommand}" Grid.Column="0"/>
+                        <Button IsVisible="{Binding answerVisible}" IsEnabled="{Binding visibleStatInfo,Converter={StaticResource BoolConverter}}" Text="NIE" BackgroundColor="#d9534f" Command="{Binding AnswerNOCommand}" Grid.Column="1"/>
+                    </Grid>
+                    <Label Text="{Binding statisticInfo}" IsVisible="{Binding visibleStatInfo}"/>
+                </StackLayout>
+            </ScrollView>
             <controls:AdMobView HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand"/>
-        <controls:AdBanner AdID="ca-app-pub-4454936709409872/1119595746" Grid.Row="0" Grid.RowSpan="5"/>
-    </StackLayout>
-        </ScrollView>
+            <controls:AdBanner AdID="ca-app-pub-4454936709409872/1119595746" Grid.Row="0" Grid.RowSpan="5"/>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

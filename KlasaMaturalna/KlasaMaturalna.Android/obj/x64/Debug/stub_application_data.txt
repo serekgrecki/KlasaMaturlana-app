@@ -1,0 +1,2 @@
+android.app.Application
+com.KlasaMaturalna.Klasa_Maturalna

@@ -7,15 +7,18 @@ using System.Text;
 using System.Threading.Tasks;
 using KlasaMaturalna.Models;
 using KlasaMaturalna.Services;
+using KlasaMaturalna.SQLite;
 using KlasaMaturalna.Views;
 using Xamarin.Forms;
+using SQLite;
 
 namespace KlasaMaturalna.ViewModels
 {
     public class RandomQuestionTextViewModel : INotifyPropertyChanged
     {
 
-        public UriImageSource img { get; set; }
+        public UriImageSource img { get { return _img; } set { _img = value; OnPropetyChanged(); } }
+        private UriImageSource _img;
 
         private int count;
         public static int GetRandomInt(int start, int end)
@@ -27,12 +30,13 @@ namespace KlasaMaturalna.ViewModels
 
         public RandomQuestionTextViewModel()
         {
+            visibleStatInfo = false;
             try
             {
                 int id;
                 Random rnd = new Random();
                 this.count = APIServices.countRandomQuesitonsGET();
-                if (GetRandomInt(1, 2000)%2 == 0)
+                if (GetRandomInt(1, 2000) % 2 == 0)
                     id = GetRandomInt(1, count);
                 else
                     id = rnd.Next(1, count);
@@ -43,8 +47,6 @@ namespace KlasaMaturalna.ViewModels
                 zapytanie.pytanie = zapytanie.pytanie.Replace("\\r", "");
                 zapytanie.odpowiedz = zapytanie.odpowiedz.Replace("\\n", Environment.NewLine);
                 zapytanie.odpowiedz = zapytanie.odpowiedz.Replace("\\r", "");
-                zapytanie.img = zapytanie.img.Replace("\\", "");
-                zapytanie.img = zapytanie.img.Replace("\"", "");
                 try
                 {
                     img = new UriImageSource()
@@ -58,7 +60,7 @@ namespace KlasaMaturalna.ViewModels
             }
             catch
             {
-               App.Current.MainPage.DisplayAlert("","Kosmici potrzebują połączenia z internetem.", "", "Ok");
+                App.Current.MainPage.DisplayAlert("", "Kosmici potrzebują połączenia z internetem.", "", "Ok");
             }
 
         }
@@ -93,6 +95,138 @@ namespace KlasaMaturalna.ViewModels
                 {
                     answerVisible = answerVisible == true ? false : true;
                 });
+            }
+        }
+        public Command AnswerYESCommand
+        {
+            get
+            {
+                return new Command(() =>
+                {
+                    SQLiteConnection SQLiteConnection = DependencyService.Get<ISQLite>().GetConnection();
+                    try
+                    {
+                        SQLiteConnection.Insert(new StatisticData()
+                        {
+                            Answer = true,
+                            IdQuestion = int.Parse(zapytanie.id)
+                        });
+                        statisctList = new List<StatisticData>(SQLiteConnection.Table<StatisticData>());
+
+                        foreach (var itm in statisctList.Where(e => e.IdQuestion == int.Parse(zapytanie.id)))
+                        {
+                            if (itm.Answer)
+                                countTrue++;
+                            else
+                                countFasle++;
+                        }
+                        statisticInfo =
+                            $"Na to pytanie udało Ci się odpowiedzieć {countTrue} poprawnie oraz {countFasle} nie znałeś odpowiedzi.";
+                        visibleStatInfo = true;
+                    }
+                    catch (Exception ex)
+                    {
+                        SQLiteConnection.CreateTable<StatisticData>();
+                        SQLiteConnection.Insert(new StatisticData()
+                        {
+                            Answer = true,
+                            IdQuestion = int.Parse(zapytanie.id)
+                        });
+                        statisctList = new List<StatisticData>(SQLiteConnection.Table<StatisticData>());
+
+                        foreach (var itm in statisctList.Where(e => e.IdQuestion == int.Parse(zapytanie.id)))
+                        {
+                            if (itm.Answer)
+                                countTrue++;
+                            else
+                                countFasle++;
+                        }
+                        statisticInfo =
+                            $"Na to pytanie udało Ci się odpowiedzieć {countTrue} poprawnie oraz {countFasle} nie znałeś odpowiedzi.";
+                        visibleStatInfo = true;
+                    }
+
+                });
+            }
+        }
+        public Command AnswerNOCommand
+        {
+            get
+            {
+                return new Command(() =>
+                {
+                    SQLiteConnection SQLiteConnection = DependencyService.Get<ISQLite>().GetConnection();
+                    SQLiteConnection.Insert(new StatisticData() { Answer = false, IdQuestion = int.Parse(zapytanie.id) });
+                    statisctList = new List<StatisticData>(SQLiteConnection.Table<StatisticData>());
+
+                    foreach (var itm in statisctList.Where(e => e.IdQuestion == int.Parse(zapytanie.id)))
+                    {
+                        if (itm.Answer)
+                            countTrue++;
+                        else
+                            countFasle++;
+                    }
+                    statisticInfo = $"Na to pytanie udało Ci się odpowiedzieć {countTrue} poprawnie oraz {countFasle} nie znałeś odpowiedzi.";
+                    visibleStatInfo = true;
+                });
+            }
+        }
+
+        private bool _visibleStatInfo;
+
+        public bool visibleStatInfo
+        {
+            get { return _visibleStatInfo; }
+            set
+            {
+                _visibleStatInfo = value;
+                OnPropetyChanged();
+            }
+        }
+
+        private string _statisticInfo;
+
+        public string statisticInfo
+        {
+            get { return _statisticInfo; }
+            set
+            {
+                _statisticInfo = value;
+                OnPropetyChanged();
+            }
+        }
+
+        private int _countTrue;
+
+        public int countTrue
+        {
+            get { return _countTrue; }
+            set
+            {
+                _countTrue = value;
+                OnPropetyChanged();
+            }
+        }
+        private int _countFasle;
+
+        public int countFasle
+        {
+            get { return _countFasle; }
+            set
+            {
+                _countFasle = value;
+                OnPropetyChanged();
+            }
+        }
+        private List<StatisticData> _statisctList;
+
+        public List<StatisticData> statisctList
+        {
+            get { return _statisctList; }
+            set
+            {
+                _statisctList = value;
+                OnPropetyChanged();
             }
         }
 

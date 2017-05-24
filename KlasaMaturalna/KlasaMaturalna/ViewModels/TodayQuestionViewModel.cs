@@ -7,7 +7,6 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using Android.Text.Style;
 using KlasaMaturalna.Models;
 using KlasaMaturalna.Services;
 
@@ -70,7 +69,7 @@ namespace KlasaMaturalna.ViewModels
                 OnPropetyChanged();
             }
         }
-        public NotifyTaskCompletion<ObservableCollection<TodayQuestion>> MyDataBoundList { get; private set; }
+        public NotifyTaskCompletion<ObservableCollection<TodayQuestion>> MyDataBoundList { get; set; }
         public TodayQuestionViewModel()
         {
             LabelVisable = true;

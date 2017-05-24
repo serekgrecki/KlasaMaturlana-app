@@ -29,12 +29,16 @@ namespace KlasaMaturalna {
         private global::Xamarin.Forms.Button btnAddQuestionsPage;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button btnStatisticPage;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(Master));
             btnRandomQuestionPage = this.FindByName<global::Xamarin.Forms.Button>("btnRandomQuestionPage");
             btnCalculatorPage = this.FindByName<global::Xamarin.Forms.Button>("btnCalculatorPage");
             btnTodayQuestionsPage = this.FindByName<global::Xamarin.Forms.Button>("btnTodayQuestionsPage");
             btnAddQuestionsPage = this.FindByName<global::Xamarin.Forms.Button>("btnAddQuestionsPage");
+            btnStatisticPage = this.FindByName<global::Xamarin.Forms.Button>("btnStatisticPage");
         }
     }
 }

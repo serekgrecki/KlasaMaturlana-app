@@ -33,6 +33,10 @@ namespace KlasaMaturalna
             {
                 await App.NavigateMasterDetails(new AddQuestionPage());
             };
+            btnStatisticPage.Clicked += async (sender, e) =>
+            {
+                await App.NavigateMasterDetails(new StatisticPage());
+            };
         }
 
         private void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
